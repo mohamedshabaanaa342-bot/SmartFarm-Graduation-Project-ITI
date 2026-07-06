@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\powerBI\\Farmora\\SSAS \u0026 SSRS\\Monitoring_v2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9F89E-9F89-E564-878E-5C661829F45A}|Monitoring_v2.dwproj|D:\\powerBI\\Farmora\\SSAS \u0026 SSRS\\Monitoring_v2\\Monitoring Cube.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{1AC9F89E-9F89-E564-878E-5C661829F45A}|Monitoring_v2.dwproj|solutionrelative:Monitoring Cube.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9F89E-9F89-E564-878E-5C661829F45A}|Monitoring_v2.dwproj|D:\\powerBI\\Farmora\\SSAS \u0026 SSRS\\Monitoring_v2\\Dim Sensor.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{1AC9F89E-9F89-E564-878E-5C661829F45A}|Monitoring_v2.dwproj|solutionrelative:Dim Sensor.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9F89E-9F89-E564-878E-5C661829F45A}|Monitoring_v2.dwproj|D:\\powerBI\\Farmora\\SSAS \u0026 SSRS\\Monitoring_v2\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{1AC9F89E-9F89-E564-878E-5C661829F45A}|Monitoring_v2.dwproj|solutionrelative:Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AC9F89E-9F89-E564-878E-5C661829F45A}|Monitoring_v2.dwproj|D:\\powerBI\\Farmora\\SSAS \u0026 SSRS\\Monitoring_v2\\Dim Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{1AC9F89E-9F89-E564-878E-5C661829F45A}|Monitoring_v2.dwproj|solutionrelative:Dim Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 126,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 274,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Monitoring Cube.cube [Design]",
+              "DocumentMoniker": "D:\\powerBI\\Farmora\\SSAS \u0026 SSRS\\Monitoring_v2\\Monitoring Cube.cube",
+              "RelativeDocumentMoniker": "Monitoring Cube.cube",
+              "ToolTip": "D:\\powerBI\\Farmora\\SSAS \u0026 SSRS\\Monitoring_v2\\Monitoring Cube.cube [Design]",
+              "RelativeToolTip": "Monitoring Cube.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-07-04T10:33:53.936Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dim Time.dim [Design]",
+              "DocumentMoniker": "D:\\powerBI\\Farmora\\SSAS \u0026 SSRS\\Monitoring_v2\\Dim Time.dim",
+              "RelativeDocumentMoniker": "Dim Time.dim",
+              "ToolTip": "D:\\powerBI\\Farmora\\SSAS \u0026 SSRS\\Monitoring_v2\\Dim Time.dim [Design]",
+              "RelativeToolTip": "Dim Time.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-27T06:57:40.957Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{7cc9e714-2774-4fc6-8631-a07eee703286}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dim Sensor.dim [Design]",
+              "DocumentMoniker": "D:\\powerBI\\Farmora\\SSAS \u0026 SSRS\\Monitoring_v2\\Dim Sensor.dim",
+              "RelativeDocumentMoniker": "Dim Sensor.dim",
+              "ToolTip": "D:\\powerBI\\Farmora\\SSAS \u0026 SSRS\\Monitoring_v2\\Dim Sensor.dim [Design]",
+              "RelativeToolTip": "Dim Sensor.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-27T06:55:17.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dim Date.dim [Design]",
+              "DocumentMoniker": "D:\\powerBI\\Farmora\\SSAS \u0026 SSRS\\Monitoring_v2\\Dim Date.dim",
+              "RelativeDocumentMoniker": "Dim Date.dim",
+              "ToolTip": "D:\\powerBI\\Farmora\\SSAS \u0026 SSRS\\Monitoring_v2\\Dim Date.dim [Design]",
+              "RelativeToolTip": "Dim Date.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-07-04T09:42:10.245Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

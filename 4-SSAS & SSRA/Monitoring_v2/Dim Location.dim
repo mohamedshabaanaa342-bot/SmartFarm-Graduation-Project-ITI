@@ -1,0 +1,375 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="31e975f6-3d92-487c-89d6-10151934cc15" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Location</ID>
+  <Name>Dim Location</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2276" scrolltop="-5765" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8615" y="16531" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Location" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4022" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b60f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Location" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2276</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5765</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="145">
+            <Shape Id="Location Sk" Expanded="true">
+              <Attributes>
+                <Attribute Id="Location Sk" />
+                <Attribute Id="Greenhouse Id" />
+                <Attribute Id="Zone Id" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a12e4df9-eb87-4df2-8562-1ef9c9a7fdbc">
+    <DataSourceViewID>Monitoring DS</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="a5434bd1-999e-4ce4-ba0c-7cb5568a09b2">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="8ed8f1a3-671e-4ff8-9b0a-1e0bf2eacc3d">
+      <ID>Location Sk</ID>
+      <Name>Location Sk</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7ff79b66-51e8-496e-8c3e-5d7ef4b01ab5">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8bc574ee-7f13-4c24-8891-2e00e047c7ea">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>location_sk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="aaa1651f-64fe-46ba-8118-7caccca90a29">
+          <AttributeID>Zone Id</AttributeID>
+          <Name>Zone Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="28abd427-72b4-4ddc-8a95-d1bc62a9c94a">
+          <AttributeID>Greenhouse Id</AttributeID>
+          <Name>Greenhouse Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ea0bd59-f806-4f69-83c9-023c9772aa12">
+          <AttributeID>Employee Zone Id</AttributeID>
+          <Name>Employee Zone Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b5156671-06c3-45e5-9612-da9417dacf0b">
+          <AttributeID>Sensor Zone Id</AttributeID>
+          <Name>Sensor Zone Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="178e59cf-0c95-4c76-b82c-8774e4ed471c">
+          <AttributeID>Zone Name</AttributeID>
+          <Name>Zone Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6a00a158-dcec-4c65-872f-ca057d3382e7">
+          <AttributeID>Zone Location</AttributeID>
+          <Name>Zone Location</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="77ddd653-205e-4de8-9f38-30e3386e970d">
+          <AttributeID>Zone Type</AttributeID>
+          <Name>Zone Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d6f4bf0f-0374-48a0-9ec4-0cc81d583a63">
+          <AttributeID>Solar Battery Voltage</AttributeID>
+          <Name>Solar Battery Voltage</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c339128d-1b5a-4af8-9201-e41d35eec14c">
+          <AttributeID>Greenhouse Name</AttributeID>
+          <Name>Greenhouse Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0bbf5043-0282-4918-8d9b-0d3886f091c0">
+          <AttributeID>Area Size</AttributeID>
+          <Name>Area Size</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2d425530-3591-4758-9266-2f96a2dedfe1">
+          <AttributeID>Greenhouse Status</AttributeID>
+          <Name>Greenhouse Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8bfc02d2-24dc-4148-9329-634555aeefef">
+          <AttributeID>Sensor Zone Status</AttributeID>
+          <Name>Sensor Zone Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="27fa58e8-d223-497b-b0ca-e4218c216069">
+          <AttributeID>Employee Role In Zone</AttributeID>
+          <Name>Employee Role In Zone</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4b4c791b-6d1c-4c06-b8d4-04f008b57b5b">
+      <ID>Zone Id</ID>
+      <Name>Zone Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9aff83f9-d7d5-406d-86c4-dfb580b21909">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c915c3b8-491b-48eb-9b33-f73dd099c02f">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>zone_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="762a58af-d3f9-4bc3-8589-88a5abf91d23">
+      <ID>Greenhouse Id</ID>
+      <Name>Greenhouse Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a6312ee5-86c6-42b2-80c6-1df6d26544b1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb76510f-8ab5-40cf-a21f-6d19ad5e3f50">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>greenhouse_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="622e456a-5305-4dce-84f6-16931ca1c5d8">
+      <ID>Employee Zone Id</ID>
+      <Name>Employee Zone Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="177d6bc9-9341-4770-933c-9f35bffc4edf">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc3cdb56-fdca-47eb-a9e0-b48e9c1c68a0">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>employee_zone_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="84f7634a-a6ef-4eec-b99e-10948444d167">
+      <ID>Sensor Zone Id</ID>
+      <Name>Sensor Zone Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="be6775cc-8280-4b37-b5ef-c9220dd7938c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="db21224a-144e-4020-81f6-c12d3ae5c900">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>sensor_zone_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3ae352a9-0070-4f54-a0e7-42f612416340">
+      <ID>Zone Name</ID>
+      <Name>Zone Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="173087f6-6015-4b28-86b5-8b3681a5dbd8">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b0550d1-664c-473f-8dbb-21da7788212a">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>zone_name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6ed137b6-2b93-4bcd-8f44-7e27de817886">
+      <ID>Zone Location</ID>
+      <Name>Zone Location</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2bb1bd69-eb7c-43f9-89dc-89ad8acdba2f">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4a111b3b-98ce-4fab-9efd-c4bddb7e9ad7">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>zone_location</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ac3ef374-2264-444e-b984-ef8d788dbeb5">
+      <ID>Zone Type</ID>
+      <Name>Zone Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0fe788e3-f9dd-450c-94c1-f5c8a784d27e">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f2e38827-7a2c-47f7-a3d3-f2e7c629cd08">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>zone_type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eba1d212-14cf-4fed-9170-733c5322a3a7">
+      <ID>Solar Battery Voltage</ID>
+      <Name>Solar Battery Voltage</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="52e1476a-1fd3-4fe7-a37f-bb916d29f239">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a630ed28-5ba6-4e51-8e73-a19feb892db9">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>solar_battery_voltage</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b39f557d-f229-4356-a199-7cc36fce9319">
+      <ID>Greenhouse Name</ID>
+      <Name>Greenhouse Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f6f453c6-d127-4623-90b1-9ec30264f218">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d48555ef-32ec-4e7d-a838-752eb9d48fe7">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>greenhouse_name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6512fe7b-d842-491a-acb5-8fa170ddd9df">
+      <ID>Area Size</ID>
+      <Name>Area Size</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4b594a77-8453-4955-ac96-d1f65ff5b2bf">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4a43bbae-25d4-4fbd-9607-9ac7c6899705">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>area_size</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0e67a14e-a039-4392-944f-1bf3ecdc2101">
+      <ID>Greenhouse Status</ID>
+      <Name>Greenhouse Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="81100019-f070-4a9b-aeda-0ec5de33618e">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="424d07c0-8c3d-49cf-94c3-0503b7f4193c">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>greenhouse_status</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0cad38cf-eb83-4547-9b11-49a49a66d4e6">
+      <ID>Sensor Zone Status</ID>
+      <Name>Sensor Zone Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4055672f-b97f-46a8-9fab-c447b6d14f41">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b05d1e22-ccb9-488d-a6ed-0a4449e85c8c">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>sensor_zone_status</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6bb720f3-3dd5-403e-9b0c-e179f65dd421">
+      <ID>Employee Role In Zone</ID>
+      <Name>Employee Role In Zone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e4635a2c-0f13-4e1a-8b78-d73125412f38">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c6e50564-2886-4579-8f2f-6997740f2dd5">
+            <TableID>dbo_Dim_Location</TableID>
+            <ColumnID>employee_x0020_role_x0020_in_x0020_zone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

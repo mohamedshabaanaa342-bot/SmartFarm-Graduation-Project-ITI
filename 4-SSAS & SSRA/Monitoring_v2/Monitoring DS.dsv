@@ -1,0 +1,235 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="18a7f28d-26c3-469b-98fe-a993f8729078" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Monitoring DS</ID>
+  <Name>Monitoring DS</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Farm System DWH_v2</DataSourceID>
+  <Schema>
+    <xs:schema id="Monitoring_x0020_DS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Monitoring_x0020_DS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="cde4bdf5-c3a6-4302-b4a8-dd7e14938729">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fact_Monitoring" msprop:DbTableName="Fact_Monitoring" msprop:FriendlyName="Fact_Monitoring" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="0ed4efa0-ef08-4af8-8f1f-ef8ea47cf869">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="monitoring_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="monitoring_sk" msprop:DbColumnName="monitoring_sk" msprop:design-time-name="5d60df88-9e0c-456a-895f-58ea5e6a7855" type="xs:int" />
+                  <xs:element name="reading_id" msprop:FriendlyName="reading_id" msprop:DbColumnName="reading_id" msprop:design-time-name="22d9e9eb-b466-4274-b522-e16dca9b1980" type="xs:int" minOccurs="0" />
+                  <xs:element name="environment_log_id" msprop:FriendlyName="environment_log_id" msprop:DbColumnName="environment_log_id" msprop:design-time-name="54a0c9ec-4b64-466d-af48-c02dea989a59" type="xs:int" minOccurs="0" />
+                  <xs:element name="weather_id" msprop:FriendlyName="weather_id" msprop:DbColumnName="weather_id" msprop:design-time-name="30946b3b-40ed-4f01-9277-47f8d27d0758" type="xs:int" minOccurs="0" />
+                  <xs:element name="irrigation_id" msprop:FriendlyName="irrigation_id" msprop:DbColumnName="irrigation_id" msprop:design-time-name="64384b2d-d25b-4a2f-87df-cc242c86c90a" type="xs:int" minOccurs="0" />
+                  <xs:element name="soillog_id" msprop:FriendlyName="soillog_id" msprop:DbColumnName="soillog_id" msprop:design-time-name="8b2e28bf-ee60-49e4-8409-0a2e0a12f58d" type="xs:int" minOccurs="0" />
+                  <xs:element name="time_sk" msprop:FriendlyName="time_sk" msprop:DbColumnName="time_sk" msprop:design-time-name="4ce24179-7954-4470-8ef3-02fa300f262e" type="xs:int" minOccurs="0" />
+                  <xs:element name="sensor_sk" msprop:FriendlyName="sensor_sk" msprop:DbColumnName="sensor_sk" msprop:design-time-name="39cb487a-c057-48c7-833a-32a16a49be8a" type="xs:int" minOccurs="0" />
+                  <xs:element name="location_sk" msprop:FriendlyName="location_sk" msprop:DbColumnName="location_sk" msprop:design-time-name="616a4e0b-e452-43f0-8ec3-051da179d4a3" type="xs:int" minOccurs="0" />
+                  <xs:element name="alert_sk" msprop:FriendlyName="alert_sk" msprop:DbColumnName="alert_sk" msprop:design-time-name="f57daba6-3d3d-4bed-8e8f-c831fca07045" type="xs:int" minOccurs="0" />
+                  <xs:element name="date_sk" msprop:FriendlyName="date_sk" msprop:DbColumnName="date_sk" msprop:design-time-name="e317eea1-1f72-4d58-b975-4c0aaef7cb3c" type="xs:int" minOccurs="0" />
+                  <xs:element name="reading_temperture" msprop:FriendlyName="reading_temperture" msprop:DbColumnName="reading_temperture" msprop:design-time-name="e6e41b28-bb02-4c7b-97ec-b6b7e0bab2e3" type="xs:double" minOccurs="0" />
+                  <xs:element name="reading_humidity" msprop:FriendlyName="reading_humidity" msprop:DbColumnName="reading_humidity" msprop:design-time-name="4d913cfa-8ea8-413e-bbf4-db77f30ce6f5" type="xs:double" minOccurs="0" />
+                  <xs:element name="reading_soil_moisture" msprop:FriendlyName="reading_soil_moisture" msprop:DbColumnName="reading_soil_moisture" msprop:design-time-name="62cc7c98-fcb8-4a62-9c95-72eeb73d92e9" type="xs:double" minOccurs="0" />
+                  <xs:element name="reading_soil_ph" msprop:FriendlyName="reading_soil_ph" msprop:DbColumnName="reading_soil_ph" msprop:design-time-name="f98b6d53-da1d-4ced-88b0-36b7fffe62b1" type="xs:double" minOccurs="0" />
+                  <xs:element name="reading_water_ph" msprop:FriendlyName="reading_water_ph" msprop:DbColumnName="reading_water_ph" msprop:design-time-name="32ec3d83-f357-42eb-ba5b-e0c5e570aaf1" type="xs:double" minOccurs="0" />
+                  <xs:element name="reading_waterlevel" msprop:FriendlyName="reading_waterlevel" msprop:DbColumnName="reading_waterlevel" msprop:design-time-name="62ac9a05-8447-4972-bed0-22c3e21b7703" type="xs:double" minOccurs="0" />
+                  <xs:element name="reading_is_anomaly" msprop:FriendlyName="reading_is_anomaly" msprop:DbColumnName="reading_is_anomaly" msprop:design-time-name="bb7fcb99-c4d7-4b73-8c25-12ce596f2461" type="xs:double" minOccurs="0" />
+                  <xs:element name="environment_temperture" msprop:FriendlyName="environment_temperture" msprop:DbColumnName="environment_temperture" msprop:design-time-name="dc04a7b1-5dd6-4bea-aa90-5f2856352c9c" type="xs:double" minOccurs="0" />
+                  <xs:element name="environment_humidity" msprop:FriendlyName="environment_humidity" msprop:DbColumnName="environment_humidity" msprop:design-time-name="92ab99b1-2f13-47d3-ab1f-774c1cb2f49d" type="xs:double" minOccurs="0" />
+                  <xs:element name="environment_rainfull_mm" msprop:FriendlyName="environment_rainfull_mm" msprop:DbColumnName="environment_rainfull_mm" msprop:design-time-name="cd957500-09b9-49b3-b49a-81288627863b" type="xs:double" minOccurs="0" />
+                  <xs:element name="weather_temperture" msprop:FriendlyName="weather_temperture" msprop:DbColumnName="weather_temperture" msprop:design-time-name="9c2f4625-dc39-4199-a817-34b009d30f33" type="xs:double" minOccurs="0" />
+                  <xs:element name="weather_rainfull_mm" msprop:FriendlyName="weather_rainfull_mm" msprop:DbColumnName="weather_rainfull_mm" msprop:design-time-name="f2297295-30d8-4b17-82ee-cc02ac804abf" type="xs:double" minOccurs="0" />
+                  <xs:element name="water_used_liters" msprop:FriendlyName="water_used_liters" msprop:DbColumnName="water_used_liters" msprop:design-time-name="4ec7c282-9e1e-45fb-987a-8ca21251c435" type="xs:double" minOccurs="0" />
+                  <xs:element name="soillog_moisture_pct" msprop:FriendlyName="soillog_moisture_pct" msprop:DbColumnName="soillog_moisture_pct" msprop:design-time-name="db51be84-661d-4731-85ee-fffc1b2977c3" type="xs:double" minOccurs="0" />
+                  <xs:element name="soillog_soil_ph" msprop:FriendlyName="soillog_soil_ph" msprop:DbColumnName="soillog_soil_ph" msprop:design-time-name="d10ec581-34fc-4e57-bdd0-80f0e639b2e2" type="xs:double" minOccurs="0" />
+                  <xs:element name="soillog_soil_salinity" msprop:FriendlyName="soillog_soil_salinity" msprop:DbColumnName="soillog_soil_salinity" msprop:design-time-name="dfb6e178-fa61-43ae-9df2-ce919b8fa751" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Time" msprop:DbTableName="Dim_Time" msprop:FriendlyName="Dim_Time" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="e8bd6177-01c3-447f-83d8-0c9a743ff928">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="time_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="time_sk" msprop:DbColumnName="time_sk" msprop:design-time-name="8c49b2b0-4545-4a25-86d6-1dfaac21cd8f" type="xs:int" />
+                  <xs:element name="second" msprop:FriendlyName="second" msprop:DbColumnName="second" msprop:design-time-name="47741a47-774d-497d-a4f1-5409555d1d38" type="xs:int" minOccurs="0" />
+                  <xs:element name="minte" msprop:FriendlyName="minte" msprop:DbColumnName="minte" msprop:design-time-name="89bfb5c6-f2c2-4da7-911a-61465e79aecd" type="xs:int" minOccurs="0" />
+                  <xs:element name="hour" msprop:FriendlyName="hour" msprop:DbColumnName="hour" msprop:design-time-name="f1040310-480f-4dd4-ba66-34880a6d0d3e" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Sensor" msprop:DbTableName="Dim_Sensor" msprop:FriendlyName="Dim_Sensor" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="f36402ee-12c8-438f-a025-a14130a2770b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="sensor_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="sensor_sk" msprop:DbColumnName="sensor_sk" msprop:design-time-name="85173824-40b6-4a6e-9186-bc5c292fc49a" type="xs:int" />
+                  <xs:element name="sensor_id" msprop:FriendlyName="sensor_id" msprop:DbColumnName="sensor_id" msprop:design-time-name="5a30962c-0c31-457f-8b8f-77fe18a9fc7f" type="xs:int" minOccurs="0" />
+                  <xs:element name="crop_sensor_id" msprop:FriendlyName="crop_sensor_id" msprop:DbColumnName="crop_sensor_id" msprop:design-time-name="ad282cbf-53d4-4b73-8e76-d1be855dd74a" type="xs:int" minOccurs="0" />
+                  <xs:element name="serial_number" msprop:FriendlyName="serial_number" msprop:DbColumnName="serial_number" msprop:design-time-name="c82724c9-7156-467f-93e8-3b3a2ef9a586" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="sensor_type" msprop:FriendlyName="sensor_type" msprop:DbColumnName="sensor_type" msprop:design-time-name="f8f38649-4875-45d7-aa3b-368b52ac403e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="sensor_status" msprop:FriendlyName="sensor_status" msprop:DbColumnName="sensor_status" msprop:design-time-name="20d34b79-357c-4283-a258-ffdb011c3e22" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Location" msprop:DbTableName="Dim_Location" msprop:FriendlyName="Dim_Location" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="0b88f029-bd24-4d52-8cd0-09ec1f51d8d6">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="location_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="location_sk" msprop:DbColumnName="location_sk" msprop:design-time-name="24a6bfaf-2ecd-4863-bb94-8f8eb0243de8" type="xs:int" />
+                  <xs:element name="zone_id" msprop:FriendlyName="zone_id" msprop:DbColumnName="zone_id" msprop:design-time-name="26838f5b-3384-4bd0-ac36-447e433461d8" type="xs:int" minOccurs="0" />
+                  <xs:element name="greenhouse_id" msprop:FriendlyName="greenhouse_id" msprop:DbColumnName="greenhouse_id" msprop:design-time-name="76dde28b-2182-43f6-b1a7-94556c8d0fa1" type="xs:int" minOccurs="0" />
+                  <xs:element name="employee_zone_id" msprop:FriendlyName="employee_zone_id" msprop:DbColumnName="employee_zone_id" msprop:design-time-name="224792ab-a598-41fc-8074-007ab64a2e52" type="xs:int" minOccurs="0" />
+                  <xs:element name="sensor_zone_id" msprop:FriendlyName="sensor_zone_id" msprop:DbColumnName="sensor_zone_id" msprop:design-time-name="5246a359-c870-43b0-93c1-23d100d50d94" type="xs:int" minOccurs="0" />
+                  <xs:element name="zone_name" msprop:FriendlyName="zone_name" msprop:DbColumnName="zone_name" msprop:design-time-name="4cc6142a-b761-43ae-af00-8afc747ff7e1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="zone_location" msprop:FriendlyName="zone_location" msprop:DbColumnName="zone_location" msprop:design-time-name="8d8779fb-ca25-406b-9f1d-2585137146fc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="zone_type" msprop:FriendlyName="zone_type" msprop:DbColumnName="zone_type" msprop:design-time-name="e966f61a-e491-4ca5-b051-a38c4709e348" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="solar_battery_voltage" msprop:FriendlyName="solar_battery_voltage" msprop:DbColumnName="solar_battery_voltage" msprop:design-time-name="f39083cb-6158-446a-9ac6-b2ff7d776d65" type="xs:double" minOccurs="0" />
+                  <xs:element name="greenhouse_name" msprop:FriendlyName="greenhouse_name" msprop:DbColumnName="greenhouse_name" msprop:design-time-name="03ae2308-4206-41bd-b46d-ee2402e63ad5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="area_size" msprop:FriendlyName="area_size" msprop:DbColumnName="area_size" msprop:design-time-name="73ec4280-4bf4-4055-bd73-d9ae268701f7" type="xs:double" minOccurs="0" />
+                  <xs:element name="greenhouse_status" msprop:FriendlyName="greenhouse_status" msprop:DbColumnName="greenhouse_status" msprop:design-time-name="cd71fdc5-1686-4638-a449-31f2bf6500c3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="employee_x0020_role_x0020_in_x0020_zone" msprop:FriendlyName="employee role in zone" msprop:DbColumnName="employee role in zone" msprop:design-time-name="a6a1c48f-5f4f-4a53-8c58-d7d8fa5e7b0d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="sensor_zone_status" msprop:FriendlyName="sensor_zone_status" msprop:DbColumnName="sensor_zone_status" msprop:design-time-name="4f9ca9c9-656c-4841-b1e3-a8ef107a7ed7" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Date" msprop:DbTableName="Dim_Date" msprop:FriendlyName="Dim_Date" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="b2b2de51-e4ff-4f7d-8836-691c012719ec">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="date_sk" msprop:FriendlyName="date_sk" msprop:DbColumnName="date_sk" msprop:design-time-name="ee5c463e-fa85-40b9-b8a2-248284d0bf44" type="xs:int" />
+                  <xs:element name="Day" msprop:FriendlyName="Day" msprop:DbColumnName="Day" msprop:design-time-name="fcf1ef50-ffe1-48b4-87ca-cfd64aed5360" type="xs:int" minOccurs="0" />
+                  <xs:element name="mounth" msprop:FriendlyName="mounth" msprop:DbColumnName="mounth" msprop:design-time-name="6244f18b-3e1e-4731-bcc2-90fa7c4956df" type="xs:int" minOccurs="0" />
+                  <xs:element name="year" msprop:FriendlyName="year" msprop:DbColumnName="year" msprop:design-time-name="03a60859-1f27-47f5-a593-df521a4945f5" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_Monitoring" />
+          <xs:field xpath="monitoring_sk" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Time" />
+          <xs:field xpath="time_sk" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Sensor_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Sensor" />
+          <xs:field xpath="sensor_sk" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Location_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Location" />
+          <xs:field xpath="location_sk" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Date" />
+          <xs:field xpath="date_sk" />
+        </xs:unique>
+        <xs:keyref name="FK__Fact_Moni__time___70DDC3D8" refer="dbo_Dim_Time_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Monitoring" />
+          <xs:field xpath="time_sk" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Moni__date___6EF57B66" refer="dbo_Dim_Date_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Monitoring" />
+          <xs:field xpath="date_sk" />
+        </xs:keyref>
+        <xs:keyref name="FGG" refer="dbo_Dim_Location_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Monitoring" />
+          <xs:field xpath="location_sk" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Moni__senso__6FE99F9F" refer="dbo_Dim_Sensor_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Monitoring" />
+          <xs:field xpath="sensor_sk" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Monitoring_x0020_DS xmlns="" />
+  </Schema>
+</DataSourceView>
