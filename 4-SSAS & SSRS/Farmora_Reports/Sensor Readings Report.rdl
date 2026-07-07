@@ -9,7 +9,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.14.36310.24</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2026-07-06T20:55:48.3605154Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2026-07-07T14:25:29.5488799Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
@@ -681,10 +681,10 @@ FROM [Monitoring Cube]</CommandText>
                   <Width>0.95323in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.97537in</Width>
+                  <Width>0.68503in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.91704in</Width>
+                  <Width>0.65871in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.0087in</Width>
@@ -693,16 +693,10 @@ FROM [Monitoring Cube]</CommandText>
                   <Width>0.67537in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.90367in</Width>
+                  <Width>0.8767in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.84412in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>0.52467in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>0.66634in</Width>
+                  <Width>0.89412in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1004,80 +998,6 @@ FROM [Monitoring Cube]</CommandText>
                         </Textbox>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox94">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Month</Value>
-                                  <Style>
-                                    <FontFamily>Arial</FontFamily>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox94</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>DarkOliveGreen</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox92">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Year</Value>
-                                  <Style>
-                                    <FontFamily>Arial</FontFamily>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox92</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>DarkOliveGreen</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
@@ -1349,80 +1269,12 @@ FROM [Monitoring Cube]</CommandText>
                         </Textbox>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Mounth">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Mounth.Value</Value>
-                                  <Style>
-                                    <FontFamily>Arial</FontFamily>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Mounth</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, "White", "#E8F5F0")</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Year">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Year.Value</Value>
-                                  <Style>
-                                    <FontFamily>Arial</FontFamily>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Year</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, "White", "#E8F5F0")</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
               </TablixRows>
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
-                <TablixMember />
-                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -1444,10 +1296,10 @@ FROM [Monitoring Cube]</CommandText>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>SensorData</DataSetName>
-            <Top>2.89945in</Top>
-            <Left>0.16499in</Left>
+            <Top>3.07445in</Top>
+            <Left>0.17888in</Left>
             <Height>0.54166in</Height>
-            <Width>8.17334in</Width>
+            <Width>6.45667in</Width>
             <Style>
               <Border>
                 <Color>DarkGreen</Color>
@@ -1495,7 +1347,7 @@ FROM [Monitoring Cube]</CommandText>
             <Top>0.11611in</Top>
             <Left>0.13721in</Left>
             <Height>0.29167in</Height>
-            <Width>8.20112in</Width>
+            <Width>6.48445in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1530,7 +1382,7 @@ FROM [Monitoring Cube]</CommandText>
             <Top>0.47722in</Top>
             <Left>0.15666in</Left>
             <Height>0.27779in</Height>
-            <Width>8.18167in</Width>
+            <Width>6.465in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1932,7 +1784,7 @@ FROM [Monitoring Cube]</CommandText>
             <Top>0.83278in</Top>
             <Left>0.17888in</Left>
             <Height>2.025in</Height>
-            <Width>4.02582in</Width>
+            <Width>3.24622in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -2363,10 +2215,10 @@ FROM [Monitoring Cube]</CommandText>
               </Style>
             </ChartNoDataMessage>
             <DataSetName>SensorData</DataSetName>
-            <Top>0.82445in</Top>
-            <Left>4.24636in</Left>
+            <Top>0.79667in</Top>
+            <Left>3.49454in</Left>
             <Height>2.06111in</Height>
-            <Width>4.09197in</Width>
+            <Width>3.22712in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -2378,7 +2230,7 @@ FROM [Monitoring Cube]</CommandText>
             </Style>
           </Chart>
         </ReportItems>
-        <Height>3.57166in</Height>
+        <Height>3.61611in</Height>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2386,8 +2238,9 @@ FROM [Monitoring Cube]</CommandText>
           <BackgroundColor>#bccdc7</BackgroundColor>
         </Style>
       </Body>
-      <Width>8.67166in</Width>
+      <Width>6.72166in</Width>
       <Page>
+        <PageWidth>7in</PageWidth>
         <Style />
       </Page>
     </ReportSection>

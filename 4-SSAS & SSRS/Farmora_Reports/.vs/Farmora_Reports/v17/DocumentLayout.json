@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRA\\Farmora_Reports\\",
+  "WorkspaceRootPath": "D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRS\\Farmora_Reports\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04F4D887-7CEE-4F3B-B9EF-519EECB4D6B4}|Farmora_Reports.rptproj|D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRA\\Farmora_Reports\\Sensor Status Report.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
-      "RelativeMoniker": "D:0:0:{04F4D887-7CEE-4F3B-B9EF-519EECB4D6B4}|Farmora_Reports.rptproj|solutionrelative:Sensor Status Report.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+      "AbsoluteMoniker": "D:0:0:{04F4D887-7CEE-4F3B-B9EF-519EECB4D6B4}|Farmora_Reports.rptproj|D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRS\\Farmora_Reports\\Greenhouse Overview Report.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{04F4D887-7CEE-4F3B-B9EF-519EECB4D6B4}|Farmora_Reports.rptproj|solutionrelative:Greenhouse Overview Report.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04F4D887-7CEE-4F3B-B9EF-519EECB4D6B4}|Farmora_Reports.rptproj|D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRA\\Farmora_Reports\\Sensor Readings Report.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "AbsoluteMoniker": "D:0:0:{04F4D887-7CEE-4F3B-B9EF-519EECB4D6B4}|Farmora_Reports.rptproj|D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRS\\Farmora_Reports\\Sensor Readings Report.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
       "RelativeMoniker": "D:0:0:{04F4D887-7CEE-4F3B-B9EF-519EECB4D6B4}|Farmora_Reports.rptproj|solutionrelative:Sensor Readings Report.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04F4D887-7CEE-4F3B-B9EF-519EECB4D6B4}|Farmora_Reports.rptproj|D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRS\\Farmora_Reports\\Sensor Status Report.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{04F4D887-7CEE-4F3B-B9EF-519EECB4D6B4}|Farmora_Reports.rptproj|solutionrelative:Sensor Status Report.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,7 +36,7 @@
         },
         {
           "DockedHeight": 274,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -40,14 +44,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Sensor Readings Report.rdl [Design]",
+              "DocumentMoniker": "D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRS\\Farmora_Reports\\Sensor Readings Report.rdl",
+              "RelativeDocumentMoniker": "Sensor Readings Report.rdl",
+              "ToolTip": "D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRS\\Farmora_Reports\\Sensor Readings Report.rdl [Design]",
+              "RelativeToolTip": "Sensor Readings Report.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-07-07T16:05:29.42Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Sensor Status Report.rdl [Design]",
-              "DocumentMoniker": "D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRA\\Farmora_Reports\\Sensor Status Report.rdl",
+              "DocumentMoniker": "D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRS\\Farmora_Reports\\Sensor Status Report.rdl",
               "RelativeDocumentMoniker": "Sensor Status Report.rdl",
-              "ToolTip": "D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRA\\Farmora_Reports\\Sensor Status Report.rdl [Design]",
+              "ToolTip": "D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRS\\Farmora_Reports\\Sensor Status Report.rdl [Design]",
               "RelativeToolTip": "Sensor Status Report.rdl [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-07-07T11:25:39.148Z",
+              "WhenOpened": "2026-07-07T16:05:18.293Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Greenhouse Overview Report.rdl [Design]",
+              "DocumentMoniker": "D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRS\\Farmora_Reports\\Greenhouse Overview Report.rdl",
+              "RelativeDocumentMoniker": "Greenhouse Overview Report.rdl",
+              "ToolTip": "D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRS\\Farmora_Reports\\Greenhouse Overview Report.rdl [Design]",
+              "RelativeToolTip": "Greenhouse Overview Report.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-07-07T14:13:41.515Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -61,18 +89,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Sensor Readings Report.rdl [Design]",
-              "DocumentMoniker": "D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRA\\Farmora_Reports\\Sensor Readings Report.rdl",
-              "RelativeDocumentMoniker": "Sensor Readings Report.rdl",
-              "ToolTip": "D:\\powerBI\\Farmora\\Github\\SmartFarm-Graduation-Project-ITI\\4-SSAS \u0026 SSRA\\Farmora_Reports\\Sensor Readings Report.rdl [Design]",
-              "RelativeToolTip": "Sensor Readings Report.rdl [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-07-04T12:14:53.544Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",

@@ -53,6 +53,7 @@
     <DataSource Include="DataSource1.rds" />
   </ItemGroup>
   <ItemGroup>
+    <Report Include="Greenhouse Overview Report.rdl" />
     <Report Include="Sensor Readings Report.rdl" />
     <Report Include="Sensor Status Report.rdl" />
   </ItemGroup>
