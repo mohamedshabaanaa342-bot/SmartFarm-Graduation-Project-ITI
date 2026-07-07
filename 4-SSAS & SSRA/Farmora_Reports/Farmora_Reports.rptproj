@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="Sensor Readings Report.rdl" />
+    <Report Include="Sensor Status Report.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
