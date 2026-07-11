@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Smart Farm — Agent Dashboard</title>
+<style>
+  /* ── Tokens ─────────────────────────────────────────────── */
+  :root {
+    --soil:    #2C1A0E;   /* deep earth brown — primary text */
+    --canopy:  #1B3A2D;   /* dark forest green — header */
+    --leaf:    #4A7C59;   /* mid green — accents, borders */
+    --sprout:  #8DB87A;   /* light green — highlights */
+    --husk:    #F2EBD9;   /* warm cream — page background */
+    --paper:   #FDFAF4;   /* near-white — card background */
+    --amber:   #C97B2A;   /* harvest amber — warnings */
+    --clay:    #B84C3E;   /* fired clay — high severity */
+    --sky:     #3B7EA1;   /* irrigation blue — info */
+    --mist:    #E8F0EC;   /* very light green — subtle bg */
+
+    --r: 6px;
+    --gap: 1.5rem;
+    --font-body: 'Georgia', serif;
+    --font-ui: 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--husk);
+    color: var(--soil);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ── Header ─────────────────────────────────────────────── */
+  header {
+    background: var(--canopy);
+    color: var(--husk);
+    padding: 1.25rem var(--gap) 1rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    border-bottom: 3px solid var(--sprout);
+  }
+  header h1 {
+    font-family: var(--font-ui);
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  header .sub {
+    font-family: var(--font-body);
+    font-size: .85rem;
+    color: var(--sprout);
+    font-style: italic;
+  }
+  .api-badge {
+    margin-left: auto;
+    font-family: var(--font-ui);
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    background: var(--sprout);
+    color: var(--canopy);
+    padding: .2rem .55rem;
+    border-radius: 20px;
+  }
+
+  /* ── Config bar ──────────────────────────────────────────── */
+  .config-bar {
+    background: var(--canopy);
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding: .6rem var(--gap);
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    flex-wrap: wrap;
+  }
+  .config-bar label {
+    font-family: var(--font-ui);
+    font-size: .8rem;
+    color: var(--sprout);
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  .config-bar input {
+    flex: 1;
+    min-width: 260px;
+    padding: .35rem .65rem;
+    border: 1px solid var(--leaf);
+    border-radius: var(--r);
+    background: rgba(255,255,255,.08);
+    color: var(--husk);
+    font-family: var(--font-ui);
+    font-size: .85rem;
+  }
+  .config-bar input::placeholder { color: rgba(242,235,217,.4); }
+  .config-bar input:focus { outline: 2px solid var(--sprout); }
+  #url-status {
+    font-family: var(--font-ui);
+    font-size: .75rem;
+    color: var(--sprout);
+  }
+
+  /* ── Layout ──────────────────────────────────────────────── */
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+  }
+
+  /* ── Cards ───────────────────────────────────────────────── */
+  .card {
+    background: var(--paper);
+    border: 1px solid #d8cfc0;
+    border-radius: var(--r);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .card.full-width { grid-column: 1 / -1; }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    padding: .85rem 1.1rem;
+    border-bottom: 2px solid var(--mist);
+  }
+  .card-header .icon {
+    width: 32px; height: 32px;
+    background: var(--mist);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .card-header h2 {
+    font-family: var(--font-ui);
+    font-size: .95rem;
+    font-weight: 700;
+    color: var(--canopy);
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+  .card-header .agent-tag {
+    margin-left: auto;
+    font-family: var(--font-ui);
+    font-size: .68rem;
+    font-weight: 600;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--leaf);
+    background: var(--mist);
+    padding: .15rem .45rem;
+    border-radius: 20px;
+  }
+
+  .card-body { padding: 1.1rem; flex: 1; }
+
+  /* ── Form controls ───────────────────────────────────────── */
+  .field { margin-bottom: .85rem; }
+  .field label {
+    display: block;
+    font-family: var(--font-ui);
+    font-size: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--leaf);
+    margin-bottom: .3rem;
+  }
+  .field input, .field select {
+    width: 100%;
+    padding: .45rem .7rem;
+    border: 1px solid #ccc;
+    border-radius: var(--r);
+    font-family: var(--font-body);
+    font-size: .95rem;
+    color: var(--soil);
+    background: white;
+  }
+  .field input:focus, .field select:focus {
+    outline: 2px solid var(--leaf);
+    border-color: var(--leaf);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .5rem 1.1rem;
+    border: none;
+    border-radius: var(--r);
+    font-family: var(--font-ui);
+    font-size: .85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity .15s, transform .1s;
+  }
+  .btn:active { transform: scale(.97); }
+  .btn:disabled { opacity: .5; cursor: not-allowed; }
+  .btn-primary { background: var(--canopy); color: var(--husk); }
+  .btn-primary:hover:not(:disabled) { opacity: .88; }
+  .btn-amber   { background: var(--amber);  color: white; }
+  .btn-amber:hover:not(:disabled)   { opacity: .88; }
+  .btn-sky     { background: var(--sky);    color: white; }
+  .btn-sky:hover:not(:disabled)     { opacity: .88; }
+
+  /* ── Output boxes ────────────────────────────────────────── */
+  .output-box {
+    margin-top: .9rem;
+    padding: .85rem;
+    border-radius: var(--r);
+    background: var(--mist);
+    border-left: 3px solid var(--leaf);
+    font-size: .95rem;
+    line-height: 1.65;
+    min-height: 60px;
+    display: none;
+  }
+  .output-box.visible { display: block; }
+  .output-box.loading {
+    display: block;
+    color: var(--leaf);
+    font-style: italic;
+    font-size: .9rem;
+  }
+  .output-box.error {
+    display: block;
+    border-left-color: var(--clay);
+    background: #fdf0ee;
+    color: var(--clay);
+    font-family: var(--font-ui);
+    font-size: .85rem;
+  }
+
+  /* ── Alert table ─────────────────────────────────────────── */
+  .alert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: .75rem;
+    margin-top: .9rem;
+  }
+  .alert-card {
+    border: 1px solid #d8cfc0;
+    border-radius: var(--r);
+    padding: .8rem 1rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+  }
+  .alert-card .zone {
+    font-family: var(--font-ui);
+    font-size: .72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    color: var(--leaf);
+  }
+  .alert-card .type {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--soil);
+  }
+  .severity-badge {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: .15rem .5rem;
+    border-radius: 20px;
+    width: fit-content;
+  }
+  .sev-high   { background: #fde8e6; color: var(--clay); }
+  .sev-medium { background: #fef4e0; color: var(--amber); }
+  .sev-low    { background: var(--mist); color: var(--leaf); }
+
+  .triage-btn {
+    margin-top: .5rem;
+    padding: .3rem .7rem;
+    font-size: .78rem;
+  }
+
+  /* ── Data table ──────────────────────────────────────────── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-ui);
+    font-size: .82rem;
+    margin-top: .9rem;
+  }
+  .data-table th {
+    background: var(--mist);
+    color: var(--leaf);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    padding: .45rem .7rem;
+    text-align: left;
+    border-bottom: 2px solid #d8cfc0;
+  }
+  .data-table td {
+    padding: .45rem .7rem;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+  }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:hover td { background: #f9f6f0; }
+
+  /* ── Spinner ─────────────────────────────────────────────── */
+  .spinner {
+    display: inline-block;
+    width: 14px; height: 14px;
+    border: 2px solid rgba(75,124,89,.3);
+    border-top-color: var(--leaf);
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+    vertical-align: middle;
+    margin-right: .4rem;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Responsive ──────────────────────────────────────────── */
+  @media (max-width: 680px) {
+    main { grid-template-columns: 1fr; }
+    .card.full-width { grid-column: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>🌱 Smart Farm</h1>
+  </div>
+  <span class="sub">Agent Dashboard</span>
+</header>
+
+<!-- API URL config -->
+<div class="config-bar">
+  <input id="api-url" type="text"
+    placeholder="https://abc123.ngrok-free.app"
+    value="" />
+  <span id="url-status"></span>
+</div>
+
+<main>
+
+  <!-- ── Alerts panel ── -->
+  <div class="card full-width">
+    <div class="card-header">
+      <div class="icon">🚨</div>
+      <h2>Live Alerts</h2>
+      <span class="agent-tag">DB Read</span>
+    </div>
+    <div class="card-body">
+      <button class="btn btn-primary" onclick="loadAlerts()">Load alerts from database</button>
+      <div id="alerts-output"></div>
+    </div>
+  </div>
+
+  <!-- ── QA Agent ── -->
+  <div class="card">
+    <div class="card-header">
+      <div class="icon">💬</div>
+      <h2>Ask the Farm</h2>
+      <span class="agent-tag">QA Agent</span>
+    </div>
+    <div class="card-body">
+      <div class="field">
+        <label for="qa-input">Natural-language question</label>
+        <input id="qa-input" type="text"
+          placeholder="Which zone has the lowest crop health?"
+          value="What alerts are currently open?" />
+      </div>
+      <button class="btn btn-primary" onclick="runQA()">Ask</button>
+      <div id="qa-output" class="output-box"></div>
+      <div id="qa-table"></div>
+    </div>
+  </div>
+
+  <!-- ── Narrator Agent ── -->
+  <div class="card">
+    <div class="card-header">
+      <div class="icon">📋</div>
+      <h2>Daily Brief</h2>
+      <span class="agent-tag">Narrator Agent</span>
+    </div>
+    <div class="card-body">
+      <p style="font-size:.9rem;color:#666;margin-bottom:.9rem;">
+        Generates a 3-sentence status summary across all zones and saves it to the database.
+      </p>
+      <button class="btn btn-sky" onclick="runNarrate()">Generate today's brief</button>
+      <div id="narrate-output" class="output-box"></div>
+    </div>
+  </div>
+
+  <!-- ── Triage Agent ── -->
+  <div class="card full-width">
+    <div class="card-header">
+      <div class="icon">🔧</div>
+      <h2>Triage an Alert</h2>
+      <span class="agent-tag">Triage Agent</span>
+    </div>
+    <div class="card-body">
+      <div class="field" style="max-width:200px;">
+        <label for="triage-id">Alert ID</label>
+        <select id="triage-id">
+          <option value="1">Alert #1 — low_soil_moisture (high)</option>
+          <option value="2">Alert #2 — high_temperature (medium)</option>
+          <option value="3">Alert #3 — low_soil_ph (high)</option>
+        </select>
+      </div>
+      <button class="btn btn-amber" onclick="runTriage()">Get recommended action</button>
+      <div id="triage-output" class="output-box"></div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+// ── Helpers ──────────────────────────────────────────────────
+
+function getBase() {
+  const raw = document.getElementById('api-url').value.trim().replace(/\/$/, '');
+  if (!raw) { alert('Paste your ngrok URL in the API URL bar at the top.'); return null; }
+  return raw;
+}
+
+function setOut(id, html, cls = 'visible') {
+  const el = document.getElementById(id);
+  el.innerHTML = html;
+  el.className = `output-box ${cls}`;
+}
+
+function loading(id) {
+  setOut(id, '<span class="spinner"></span> Calling agent…', 'loading');
+}
+
+function errOut(id, msg) {
+  setOut(id, `⚠️ ${msg}`, 'error');
+}
+
+async function post(path, body = {}) {
+  const base = getBase();
+  if (!base) throw new Error('No URL');
+  const res = await fetch(`${base}${path}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
+async function get(path) {
+  const base = getBase();
+  if (!base) throw new Error('No URL');
+  const res = await fetch(`${base}${path}`);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
+// ── Render helpers ────────────────────────────────────────────
+
+function renderTable(rows) {
+  if (!rows || !rows.length) return '';
+  const keys = Object.keys(rows[0]);
+  const head = keys.map(k => `<th>${k}</th>`).join('');
+  const body = rows.map(r =>
+    `<tr>${keys.map(k => `<td>${r[k] ?? '—'}</td>`).join('')}</tr>`
+  ).join('');
+  return `<table class="data-table"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`;
+}
+
+function sevClass(s) {
+  if (s === 'high')   return 'sev-high';
+  if (s === 'medium') return 'sev-medium';
+  return 'sev-low';
+}
+
+// ── Agent calls ───────────────────────────────────────────────
+
+async function loadAlerts() {
+  const out = document.getElementById('alerts-output');
+  out.innerHTML = '<p style="margin-top:.9rem;font-style:italic;color:var(--leaf)"><span class="spinner"></span>Loading…</p>';
+  try {
+    const rows = await get('/alerts');
+    if (!rows.length) { out.innerHTML = '<p style="margin-top:.9rem;">No alerts found.</p>'; return; }
+    const cards = rows.map(r => `
+      <div class="alert-card">
+        <span class="zone">${r.zone_name}</span>
+        <span class="type">${r.alert_type.replaceAll('_', ' ')}</span>
+        <span class="severity-badge ${sevClass(r.severity)}">${r.severity}</span>
+        <button class="btn btn-amber triage-btn"
+          onclick="triageAlert('${r.alert_id}')">
+          Triage alert #${r.alert_id}
+        </button>
+      </div>`).join('');
+    out.innerHTML = `<div class="alert-grid">${cards}</div>`;
+  } catch (e) {
+    out.innerHTML = `<p style="margin-top:.9rem;color:var(--clay);">⚠️ ${e.message} — is your ngrok URL set?</p>`;
+  }
+}
+
+async function runQA() {
+  const question = document.getElementById('qa-input').value.trim();
+  if (!question) return;
+  loading('qa-output');
+  document.getElementById('qa-table').innerHTML = '';
+  try {
+    const d = await post('/qa', { question });
+    setOut('qa-output', d.output);
+    document.getElementById('qa-table').innerHTML = renderTable(d.data);
+  } catch (e) { errOut('qa-output', e.message); }
+}
+
+async function runNarrate() {
+  loading('narrate-output');
+  try {
+    const d = await post('/narrate');
+    setOut('narrate-output', d.output);
+  } catch (e) { errOut('narrate-output', e.message); }
+}
+
+async function runTriage(alertId) {
+  const id = alertId ?? document.getElementById('triage-id').value;
+  // scroll to triage card
+  document.getElementById('triage-output').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  loading('triage-output');
+  // sync dropdown if called from alert card
+  if (alertId) {
+    const sel = document.getElementById('triage-id');
+    if ([...sel.options].some(o => o.value === String(alertId))) sel.value = alertId;
+  }
+  try {
+    const d = await post('/triage', { alert_id: id });
+    setOut('triage-output', d.output);
+  } catch (e) { errOut('triage-output', e.message); }
+}
+
+function triageAlert(id) { runTriage(id); }
+
+// ── URL persistence ───────────────────────────────────────────
+const urlInput = document.getElementById('api-url');
+const saved = localStorage.getItem('farm_api_url');
+if (saved) { urlInput.value = saved; document.getElementById('url-status').textContent = '(restored)'; }
+urlInput.addEventListener('input', () => {
+  localStorage.setItem('farm_api_url', urlInput.value.trim());
+  document.getElementById('url-status').textContent = 'saved';
+  setTimeout(() => document.getElementById('url-status').textContent = '', 1500);
+});
+</script>
+</body>
+</html>
