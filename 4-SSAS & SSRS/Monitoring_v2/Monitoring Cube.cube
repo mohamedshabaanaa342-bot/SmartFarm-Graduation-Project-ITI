@@ -1,0 +1,700 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7d94481e-ba2a-42ec-a2d8-b96905096b7d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Monitoring Cube</ID>
+  <Name>Monitoring Cube</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3530" scrolltop="-476" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="27051" y="16531" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Sensor" left="7077" top="12107" logicalid="10" controlid="1" masterid="0" hint1="0" hint2="0" width="3154" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000520c0000d30b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Sensor" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_Monitoring" left="6442" top="4707" logicalid="11" controlid="2" masterid="0" hint1="0" hint2="0" width="4424" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004811000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Fact_Monitoring" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Date" left="7154" top="0" logicalid="12" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000003090000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Date" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Time" left="13266" top="6053" logicalid="13" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000003090000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Location" left="20" top="4707" logicalid="14" controlid="5" masterid="0" hint1="0" hint2="0" width="4022" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b60f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Location" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8255" top="9407" logicalid="15" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Fact_Moni__senso__6FE99F9F]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8654" y="12107" />
+              <point x="8654" y="9707" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3742" top="6808" logicalid="16" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FGG]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="2" sourceattachpoint="23" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4042" y="7207" />
+              <point x="6442" y="7207" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8255" top="1808" logicalid="17" controlid="8" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Fact_Moni__date___6EF57B66]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8654" y="2307" />
+              <point x="8654" y="4707" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="10566" top="6807" logicalid="18" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Fact_Moni__time___70DDC3D8]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="12" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13266" y="7206" />
+              <point x="12066" y="7206" />
+              <point x="12066" y="7207" />
+              <point x="10866" y="7207" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3530</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-476</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="4f285161-c395-48a7-8d5b-0852efed2d56">
+      <ID>Dim Sensor</ID>
+      <Name>Dim Sensor</Name>
+      <DimensionID>Dim Sensor</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e56c5c18-077c-4c03-9577-aeb59fc74760">
+          <AttributeID>Sensor Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8eb6fe59-c270-476d-8d72-9294e491488a">
+          <AttributeID>Sensor Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5f9265a0-ede5-4911-ba77-d29e5d595f3b">
+          <AttributeID>Sensor Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="11dccc39-5d7d-48e6-a512-177aa3302177">
+          <AttributeID>Sensor Status</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5b4fa1cd-d428-4d30-acb1-08f98de232bf">
+          <AttributeID>Serial Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="30805b39-32b5-47ec-b4c2-9f5113d3f16f">
+          <AttributeID>Crop Sensor Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b16a5986-c7ce-4c72-bbe8-268140007d7d">
+      <ID>Dim Location</ID>
+      <Name>Dim Location</Name>
+      <DimensionID>Dim Location</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="10d0781e-3b84-478c-bae5-47d9712b0fa7">
+          <AttributeID>Location Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7a82f502-c4a2-4d93-b707-addd658e3331">
+          <AttributeID>Zone Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="243ec092-da5f-42a2-819a-e58b818bcba3">
+          <AttributeID>Greenhouse Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="466cabd2-8b50-4bfd-bde5-c7ab4bb229a3">
+          <AttributeID>Employee Zone Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6ce13373-cc19-4e8a-bca4-9a8df8e709fa">
+          <AttributeID>Sensor Zone Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="05730d0b-fa38-4a64-a770-a79164ae9a26">
+          <AttributeID>Zone Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4e6d57a7-719a-473d-9d4a-1130c9f247d4">
+          <AttributeID>Zone Location</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b31f4b53-5bb9-499b-bbaa-d83d5e44eff5">
+          <AttributeID>Zone Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="214e3304-2659-4c4d-b086-cd4f06e5422b">
+          <AttributeID>Solar Battery Voltage</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="820a22ae-00bc-4c18-b69f-367b92484841">
+          <AttributeID>Greenhouse Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ac78d96b-c476-4c83-b852-177314767efe">
+          <AttributeID>Area Size</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="69dd840d-d68c-4411-a37e-4c3b59d59e7c">
+          <AttributeID>Greenhouse Status</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9e675515-dd98-4a77-bbfc-092e0b9e5b24">
+          <AttributeID>Sensor Zone Status</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1057534e-c2db-450b-9e1d-b7001257f1aa">
+          <AttributeID>Employee Role In Zone</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4e9acf3b-13a5-493e-9e63-c34cb6148552">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="df92f7cb-d1bb-4542-bfce-2b88b22313d6">
+          <AttributeID>Date Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8638d987-d906-4ecf-bf78-c2c27fdba45a">
+          <AttributeID>Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="850e3719-7cce-405c-9a73-8bbc1905bf33">
+          <AttributeID>Mounth</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b50eed59-3cd8-49fa-aff1-4f10b37004a7">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="352bce66-0809-45fd-88e2-6d99f6768d98">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="d945482a-c7a8-4b02-83fe-cd960eed8b71">
+      <ID>Dim Time</ID>
+      <Name>Dim Time</Name>
+      <DimensionID>Dim Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5e872978-ec46-4fa5-a259-09d0f4741460">
+          <AttributeID>Time Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="df16f106-39bf-4c70-888c-049a43798471">
+          <AttributeID>Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0a307134-7503-44e7-951a-c79e221e81bd">
+          <AttributeID>Minte</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="53e46737-db21-4cd6-874d-309ddd17f452">
+          <AttributeID>Second</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="72b75f05-2c99-4a26-8247-f5d0f80ecc10">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="4f03dda5-899d-4a63-bbcc-49f1a7ded3c9">
+      <ID>Fact Monitoring</ID>
+      <Name>Fact Monitoring</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="abe8edf9-e046-4dd7-aebd-eab34d362b32">
+          <ID>Reading Id</ID>
+          <Name>Reading Id</Name>
+          <Source dwd:design-time-name="c5a8f206-9a9a-4ac9-82e6-95b2d8ddbdd3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f43799da-7d7c-484f-a6b7-2b248bb38d66">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>reading_id</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d23d89d6-55e3-402c-8e21-00f62a9bba4c">
+          <ID>Environment Log Id</ID>
+          <Name>Environment Log Id</Name>
+          <Source dwd:design-time-name="aad4160f-f535-4441-9899-90447e151a45">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="66c515ac-9eb8-4501-9dc7-5ba2a3ad080c">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>environment_log_id</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3e154a65-1779-4a4a-aea8-fe014bc275cd">
+          <ID>Weather Id</ID>
+          <Name>Weather Id</Name>
+          <Source dwd:design-time-name="0c1d6578-ca5f-4949-8c7f-fba00e9dd556">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8f2d54e6-baec-4096-a483-b4605fde2ce2">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>weather_id</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ab9dd5d8-2b02-4b7c-979f-a9da69d924f0">
+          <ID>Irrigation Id</ID>
+          <Name>Irrigation Id</Name>
+          <Source dwd:design-time-name="997a9adc-ddfe-423f-b626-b9a1b60aa4e7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="dbdd5892-ff80-428f-b157-b6b91388a340">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>irrigation_id</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d168815c-9492-4fd8-bd16-714768350070">
+          <ID>Soillog Id</ID>
+          <Name>Soillog Id</Name>
+          <Source dwd:design-time-name="64bd00aa-87d0-49a4-bb8f-740246bcd1bb">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="014eca77-ff06-4018-b7ce-aff7cf860451">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>soillog_id</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8d3ef02b-74dc-46aa-bcc1-e9e86c85d093">
+          <ID>Alert Sk</ID>
+          <Name>Alert Sk</Name>
+          <Source dwd:design-time-name="7371c335-6bbb-4af7-90f5-1015ea6595d2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c76effdb-3878-4c7a-8884-f63076565f21">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>alert_sk</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="99a0db55-75f0-47c6-bdcd-6c4cedbab473">
+          <ID>Reading Temperture</ID>
+          <Name>Reading Temperture</Name>
+          <Source dwd:design-time-name="47a03009-7d03-4318-a034-b7ade0d519df">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="da45efda-2d56-4236-8f8f-a270660b53e2">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>reading_temperture</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0c9ffdbf-b6f5-4b5f-a0f4-ba98d7a84583">
+          <ID>Reading Humidity</ID>
+          <Name>Reading Humidity</Name>
+          <Source dwd:design-time-name="e1782528-d344-4e13-8c4f-df03a2650567">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2443b064-2ced-4556-b4df-0daea38ffe37">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>reading_temperture</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b4e1c484-31b2-4ce4-8edb-3dbdf5264c3a">
+          <ID>Reading Soil Moisture</ID>
+          <Name>Reading Soil Moisture</Name>
+          <Source dwd:design-time-name="001ce73f-e44e-4cf2-8d42-5aa935d6162a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bee3828e-490f-4af8-af0a-6cd1f402c778">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>reading_soil_moisture</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ca461bb1-720c-49e7-b143-70f4af33a971">
+          <ID>Reading Soil Ph</ID>
+          <Name>Reading Soil Ph</Name>
+          <Source dwd:design-time-name="b3738fe4-5d3d-43a8-bc9c-5948993905c4">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="612d71e0-f72b-4529-b7f9-2db9f1f0c1f8">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>reading_soil_ph</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a13d1ff2-a682-4c2d-a01c-b0346de7e4d3">
+          <ID>Reading Water Ph</ID>
+          <Name>Reading Water Ph</Name>
+          <Source dwd:design-time-name="5e73a5ca-7f3d-4a01-931d-daa07a0b7094">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="959818f1-bdab-4aad-ae36-9ba235632593">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>reading_water_ph</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="303a3eb2-d3b4-4a95-8397-ed1065bc44a3">
+          <ID>Reading Waterlevel</ID>
+          <Name>Reading Waterlevel</Name>
+          <Source dwd:design-time-name="118a611f-994c-4b8a-b324-05065feef9bf">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cd7d0b83-9049-49c1-ae2f-ee900443f2db">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>reading_waterlevel</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d6ed79ec-6113-428d-8aad-e77efbf3347f">
+          <ID>Reading Is Anomaly</ID>
+          <Name>Reading Is Anomaly</Name>
+          <Source dwd:design-time-name="8ca4c75f-7bc8-4254-a824-9f866f3c9f16">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="894c5db3-2bcd-429a-bc27-c60182f0571b">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>reading_is_anomaly</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="644bf89b-0f39-42eb-8db2-38569e6e5deb">
+          <ID>Environment Temperture</ID>
+          <Name>Environment Temperture</Name>
+          <Source dwd:design-time-name="bfa5e37f-2e75-403b-a32d-a4f079448a12">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ebbc8389-4ca8-464c-ad0e-565e6db15cce">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>environment_temperture</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="60c171d0-d9fd-4571-acbf-12e857f791fb">
+          <ID>Environment Humidity</ID>
+          <Name>Environment Humidity</Name>
+          <Source dwd:design-time-name="9bc9d868-06cf-4779-a763-859351e951aa">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fb790515-86fe-42d8-aeee-647551e0ccac">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>environment_humidity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3ff12de1-aea8-44db-b48a-3471c3e45ef7">
+          <ID>Environment Rainfull Mm</ID>
+          <Name>Environment Rainfull Mm</Name>
+          <Source dwd:design-time-name="c17aca5e-a3df-4673-9b25-224cbbeaebfe">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="36676839-6d40-4b90-8c97-d668a1ba93fe">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>environment_rainfull_mm</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a431bd59-95fc-41f9-8d3f-58fa5acb08ce">
+          <ID>Weather Temperture</ID>
+          <Name>Weather Temperture</Name>
+          <Source dwd:design-time-name="fe0df165-5d81-4dab-8bd9-faecf5b8bc78">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="39f1d131-82b7-48df-873c-92795072e976">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>weather_temperture</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c8e0b109-189f-4a7c-b775-b415e927a6f1">
+          <ID>Weather Rainfull Mm</ID>
+          <Name>Weather Rainfull Mm</Name>
+          <Source dwd:design-time-name="70671da4-f8d5-465f-ae69-b6d3001a3c71">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b67c4f1f-5f57-40ff-a6ce-4963f93d700a">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>weather_rainfull_mm</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="55ffed14-d200-4e9e-9f65-cb023c57ea04">
+          <ID>Water Used Liters</ID>
+          <Name>Water Used Liters</Name>
+          <Source dwd:design-time-name="143d5303-0659-4b4e-bbb2-a219a397bc8a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8b20c39b-f280-4df4-82bc-d28cb6123e85">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>water_used_liters</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="58a606d9-b6aa-438d-8961-8d251aa23879">
+          <ID>Soillog Moisture Pct</ID>
+          <Name>Soillog Moisture Pct</Name>
+          <Source dwd:design-time-name="de3d1994-48fe-4925-81db-275041a035bc">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="86aad90f-4963-4076-b858-82c9affe7410">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>soillog_moisture_pct</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fb6d969e-41a7-4667-996b-ba758cb58e12">
+          <ID>Soillog Soil Ph</ID>
+          <Name>Soillog Soil Ph</Name>
+          <Source dwd:design-time-name="ecd68292-7d90-4374-b47e-0c2c2d43c059">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="40df1590-11b4-4fd0-967b-d18aac24ad2f">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>soillog_soil_ph</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="67d61751-82bc-4f4d-9750-498ff4cfb25f">
+          <ID>Soillog Soil Salinity</ID>
+          <Name>Soillog Soil Salinity</Name>
+          <Source dwd:design-time-name="4427e008-532d-4ba6-804a-8efd2cbd99af">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bca93106-b795-4ade-bf02-085f9e3f3936">
+              <TableID>dbo_Fact_Monitoring</TableID>
+              <ColumnID>soillog_soil_salinity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b1072aa5-ddbf-4577-9e47-61c4aff1c5d7">
+          <ID>Fact Monitoring Count</ID>
+          <Name>Fact Monitoring Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="4b0e78ca-1ef6-49a6-9d4e-63c91c86315e">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="8b5ec049-0dcf-484f-a5b0-6def75e24c7b">
+              <TableID>dbo_Fact_Monitoring</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="030d2037-909a-4ec9-aded-72aa5dd70b32">
+          <CubeDimensionID>Dim Sensor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f68be926-47d4-4a19-98bf-4b2c8e8f7bfb">
+              <AttributeID>Sensor Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="97f6449b-3111-499c-b68a-10c22432c7c8">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2a686344-a176-4e15-8d84-97fe9ee7aec9">
+                    <TableID>dbo_Fact_Monitoring</TableID>
+                    <ColumnID>sensor_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d3b1c954-254f-4772-a175-8528daadd2e5">
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="539113f6-de29-4f76-9049-9cbd259180f9">
+              <AttributeID>Location Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="62fa953b-9b4f-497c-b3ab-5fcd8c9cdf0d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ac2d745b-2d63-4d3c-b2d0-ec8eb232c8c3">
+                    <TableID>dbo_Fact_Monitoring</TableID>
+                    <ColumnID>location_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8406977a-f225-48b1-8f5b-e38ae8198baa">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="62feca9c-c100-42ef-be46-6c79e4ea9931">
+              <AttributeID>Date Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6f41e8a6-f022-454a-b860-192d51e814dd">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="88943a40-5b0c-4076-a2c5-1133d6baa002">
+                    <TableID>dbo_Fact_Monitoring</TableID>
+                    <ColumnID>date_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e3964073-0e02-4467-8d82-5cdd70e1f7c0">
+          <CubeDimensionID>Dim Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3fc5f900-24c3-4459-a17b-a29ef6b28034">
+              <AttributeID>Time Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="db59e9b0-2213-491a-aa7c-dcc995bbff2a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a38426df-4a99-49f1-9a8e-25bf179b4da3">
+                    <TableID>dbo_Fact_Monitoring</TableID>
+                    <ColumnID>time_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="db2d5232-4fc3-45dd-b284-683d545d0795">
+    <DataSourceViewID>Monitoring DS</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="b6524ee5-0ed1-4fc9-b48c-f4e5ae309294">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Avg Reading Humidity]
+ AS [Measures].[Reading Humidity] / [Measures].[Fact Monitoring Count], 
+VISIBLE = 1  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Avg Reading Soil Moisture]
+ AS [Measures].[Reading Soil Moisture] / [Measures].[Fact Monitoring Count], 
+VISIBLE = 1  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Avg Reading Soil Ph]
+ AS [Measures].[Reading Soil Ph] / [Measures].[Fact Monitoring Count], 
+VISIBLE = 1  ;  
+CREATE MEMBER CURRENTCUBE.[Measures].[Avg Reading Temperature]
+ AS [Measures].[Reading Temperture] / [Measures].[Fact Monitoring Count], 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Avg Reading Waterlevel]
+ AS [Measures].[Reading Waterlevel] / [Measures].[Fact Monitoring Count], 
+VISIBLE = 1  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Avg Reading Water Ph]
+ AS [Measures].[Reading Water Ph] / [Measures].[Fact Monitoring Count], 
+VISIBLE = 1  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

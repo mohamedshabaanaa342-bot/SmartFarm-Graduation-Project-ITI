@@ -1,0 +1,202 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3a0d94a6-a3a6-485f-a961-6cb84ea344de" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Sensor</ID>
+  <Name>Dim Sensor</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1366" scrolltop="-6752" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8615" y="16531" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Sensor" left="-1" top="-5355" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3154" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000520c0000d30b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Sensor" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1366</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6752</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-5355</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5df723a6-5c09-4fdd-a7a1-a83382a2205b">
+    <DataSourceViewID>Monitoring DS</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="be566646-f63c-48b7-8f24-9044853098c2">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="44245c13-d6e0-4c65-a5e3-e46dc44812b0">
+      <ID>Sensor Sk</ID>
+      <Name>Sensor Sk</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ace3dcfd-932d-4165-8e35-a4fb69a064d6">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="17cc9b80-dbb5-467e-8668-c74ad66de682">
+            <TableID>dbo_Dim_Sensor</TableID>
+            <ColumnID>sensor_sk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5e7ecbb9-901c-4de0-a2c3-e5b9d8a12e45">
+          <AttributeID>Sensor Id</AttributeID>
+          <Name>Sensor Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f9e99c8e-4d70-4d44-b1ed-f3b7250cb58a">
+          <AttributeID>Sensor Type</AttributeID>
+          <Name>Sensor Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2add8717-0aba-4da8-a049-91695800705a">
+          <AttributeID>Sensor Status</AttributeID>
+          <Name>Sensor Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c55fa36b-979a-44db-8806-34fb0c9435a9">
+          <AttributeID>Serial Number</AttributeID>
+          <Name>Serial Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0ffebe5a-5458-4d73-ad7e-e175174e7f04">
+          <AttributeID>Crop Sensor Id</AttributeID>
+          <Name>Crop Sensor Id</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0069de7c-9d37-4fbf-a69e-7a65f115c9b8">
+      <ID>Sensor Id</ID>
+      <Name>Sensor Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2fea8297-f42d-42bd-ba0a-838bb7cf2205">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="558e6dcc-e16f-4c31-acde-22859cb892fd">
+            <TableID>dbo_Dim_Sensor</TableID>
+            <ColumnID>sensor_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="77effba6-be98-427d-9c96-f603640229eb">
+      <ID>Sensor Type</ID>
+      <Name>Sensor Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c809c861-0079-4adf-9199-1fb76575a0cd">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79b0618c-2812-4807-91aa-704db237dcb3">
+            <TableID>dbo_Dim_Sensor</TableID>
+            <ColumnID>sensor_type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="05dff85a-897a-43ae-9312-aa5914370063">
+      <ID>Sensor Status</ID>
+      <Name>Sensor Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="72b97e86-1550-47ff-9168-d90b4a58f811">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4627d556-82f9-4774-bfbb-cf45c81e24f2">
+            <TableID>dbo_Dim_Sensor</TableID>
+            <ColumnID>sensor_status</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="41f97f45-34ef-4906-9603-01bc0c678aaf">
+      <ID>Serial Number</ID>
+      <Name>Serial Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a3a6228d-efe2-4163-a828-5fdbdfa4e190">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="957411d7-df9c-4a8e-89ca-c30acd2531be">
+            <TableID>dbo_Dim_Sensor</TableID>
+            <ColumnID>serial_number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7cf984b5-4d1d-415b-8559-9ae0c3384a6e">
+      <ID>Crop Sensor Id</ID>
+      <Name>Crop Sensor Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1f8d1456-93be-4cf8-b596-fff5119adb93">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="49215835-a196-4680-9d51-d71a2e4c8e38">
+            <TableID>dbo_Dim_Sensor</TableID>
+            <ColumnID>crop_sensor_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
