@@ -1,0 +1,279 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ca87bbb2-843f-48c7-ac10-370a4097d7fc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Health Care</ID>
+  <Name>Health Care</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Farm System DWH</DataSourceID>
+  <Schema>
+    <xs:schema id="Health_x0020_Care" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Health_x0020_Care" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="445ef21a-706b-4642-9007-d1ddfdd7ca7f">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Dim_Date" msprop:DbTableName="Dim_Date" msprop:FriendlyName="Dim_Date" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="b6bef759-550a-4baa-8de7-1af78309adfd">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="date_sk" msprop:FriendlyName="date_sk" msprop:DbColumnName="date_sk" msprop:design-time-name="0c6d0059-f1e3-4cfa-b487-e3f6e1a63b3e" type="xs:int" />
+                  <xs:element name="Day" msprop:FriendlyName="Day" msprop:DbColumnName="Day" msprop:design-time-name="337a8060-8708-40ea-86c8-f225c8ca0026" type="xs:int" minOccurs="0" />
+                  <xs:element name="mounth" msprop:FriendlyName="mounth" msprop:DbColumnName="mounth" msprop:design-time-name="093cafad-5ac1-4503-b07b-efb2c052fe0f" type="xs:int" minOccurs="0" />
+                  <xs:element name="year" msprop:FriendlyName="year" msprop:DbColumnName="year" msprop:design-time-name="af118189-1235-49f9-98af-47031830f56e" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Resource" msprop:DbTableName="Dim_Resource" msprop:FriendlyName="Dim_Resource" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="5c87ed25-45fc-4fe3-a796-b12f69a8c7f4">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="resource_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="resource_sk" msprop:DbColumnName="resource_sk" msprop:design-time-name="78fc4e53-5556-41a1-9a7a-dc198ac60e55" type="xs:int" />
+                  <xs:element name="resource_id" msprop:FriendlyName="resource_id" msprop:DbColumnName="resource_id" msprop:design-time-name="12dbf799-70f6-4861-86a7-87ce16337420" type="xs:int" minOccurs="0" />
+                  <xs:element name="resource_cattle_id" msprop:FriendlyName="resource_cattle_id" msprop:DbColumnName="resource_cattle_id" msprop:design-time-name="cf8ffb5e-587f-40e6-927a-ecb25dfa0780" type="xs:int" minOccurs="0" />
+                  <xs:element name="resource_poultry_id" msprop:FriendlyName="resource_poultry_id" msprop:DbColumnName="resource_poultry_id" msprop:design-time-name="a41f7391-d3eb-4473-9d68-24f1200de8b0" type="xs:int" minOccurs="0" />
+                  <xs:element name="resource_crop_id" msprop:FriendlyName="resource_crop_id" msprop:DbColumnName="resource_crop_id" msprop:design-time-name="39701474-9687-4185-8730-696dd81af40f" type="xs:int" minOccurs="0" />
+                  <xs:element name="resource_name" msprop:FriendlyName="resource_name" msprop:DbColumnName="resource_name" msprop:design-time-name="539743aa-83d8-4540-adc2-ca641cdcf6de" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="resource_type" msprop:FriendlyName="resource_type" msprop:DbColumnName="resource_type" msprop:design-time-name="d480b4ce-7690-467c-bd50-ef4859fa4a77" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="current_stock" msprop:FriendlyName="current_stock" msprop:DbColumnName="current_stock" msprop:design-time-name="843e3df8-ae9b-4498-a297-7f70405b7774" type="xs:double" minOccurs="0" />
+                  <xs:element name="reorder_level" msprop:FriendlyName="reorder_level" msprop:DbColumnName="reorder_level" msprop:design-time-name="99d755ed-2f9b-4427-a496-884e0d3c7bf0" type="xs:double" minOccurs="0" />
+                  <xs:element name="quantity_cattle_used" msprop:FriendlyName="quantity_cattle_used" msprop:DbColumnName="quantity_cattle_used" msprop:design-time-name="1396faeb-a1ac-4275-bffa-a04e5b41e9af" type="xs:double" minOccurs="0" />
+                  <xs:element name="quantity_poultry_used" msprop:FriendlyName="quantity_poultry_used" msprop:DbColumnName="quantity_poultry_used" msprop:design-time-name="9055d0a2-78b7-4667-b830-64049a8fbe03" type="xs:double" minOccurs="0" />
+                  <xs:element name="quantity_crop_used" msprop:FriendlyName="quantity_crop_used" msprop:DbColumnName="quantity_crop_used" msprop:design-time-name="6a64fad3-d999-4f75-b25f-873ba78a7d1f" type="xs:double" minOccurs="0" />
+                  <xs:element name="application_crop_method" msprop:FriendlyName="application_crop_method" msprop:DbColumnName="application_crop_method" msprop:design-time-name="3e0564f2-404b-4f5f-afc3-f9f94c87ede8" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Assest_Catalog" msprop:DbTableName="Dim_Assest_Catalog" msprop:FriendlyName="Dim_Assest_Catalog" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="9bbd0545-9af6-428e-a85e-211a429e4ab7">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Assest_catalog_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Assest_catalog_sk" msprop:DbColumnName="Assest_catalog_sk" msprop:design-time-name="b5903281-295a-4754-9898-b54607233f53" type="xs:int" />
+                  <xs:element name="Cattle_id" msprop:FriendlyName="Cattle_id" msprop:DbColumnName="Cattle_id" msprop:design-time-name="83b121d6-e206-485c-8db5-9a35f7e8da36" type="xs:int" minOccurs="0" />
+                  <xs:element name="Poultry_id" msprop:FriendlyName="Poultry_id" msprop:DbColumnName="Poultry_id" msprop:design-time-name="9741f0a2-e663-4e60-bef2-ea146cb550c8" type="xs:int" minOccurs="0" />
+                  <xs:element name="Crop_id" msprop:FriendlyName="Crop_id" msprop:DbColumnName="Crop_id" msprop:design-time-name="5f752ae3-8105-4396-931c-b9d0946f3d5e" type="xs:int" minOccurs="0" />
+                  <xs:element name="species" msprop:FriendlyName="species" msprop:DbColumnName="species" msprop:design-time-name="b5241022-bd27-421a-a710-97e7b0dd84ec" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="breed_cattle" msprop:FriendlyName="breed_cattle" msprop:DbColumnName="breed_cattle" msprop:design-time-name="df6e5602-28d8-4205-80f0-1221dcadcdc9" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="health_stage" msprop:FriendlyName="health_stage" msprop:DbColumnName="health_stage" msprop:design-time-name="4daf9bfe-79d5-4597-8ef5-2f5a01c01859" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="status" msprop:FriendlyName="status" msprop:DbColumnName="status" msprop:design-time-name="622b0e57-ff97-4cd1-b158-b78737a79915" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="breed_poultry" msprop:FriendlyName="breed_poultry" msprop:DbColumnName="breed_poultry" msprop:design-time-name="af6cfe37-a4f2-4039-81b0-53101bff4dc1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="purpose" msprop:FriendlyName="purpose" msprop:DbColumnName="purpose" msprop:design-time-name="8ceb6a0b-4674-4f7c-984a-4e0a904e0270" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="flock_size" msprop:FriendlyName="flock_size" msprop:DbColumnName="flock_size" msprop:design-time-name="2640dd10-1986-48fe-ae93-cb43f9908630" type="xs:double" minOccurs="0" />
+                  <xs:element name="crop_name" msprop:FriendlyName="crop_name" msprop:DbColumnName="crop_name" msprop:design-time-name="fd45cf36-6158-4a93-98f6-374992d9fc9a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="variety" msprop:FriendlyName="variety" msprop:DbColumnName="variety" msprop:design-time-name="6b802de3-6884-4c6e-92a5-b7e03ab8d00d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="growth_stage" msprop:FriendlyName="growth_stage" msprop:DbColumnName="growth_stage" msprop:design-time-name="2bcc7728-e6a3-4c34-988b-42cb0d2a564a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="health_score" msprop:FriendlyName="health_score" msprop:DbColumnName="health_score" msprop:design-time-name="699852a2-dafd-48a7-b1e3-362afb2d9caf" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fact_Production" msprop:DbTableName="Fact_Production" msprop:FriendlyName="Fact_Production" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="11c9f488-1a27-4efb-bc7a-0c8fc766bef2">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="production_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="production_sk" msprop:DbColumnName="production_sk" msprop:design-time-name="bc06328d-3906-433d-a5a5-7e208acc105d" type="xs:int" />
+                  <xs:element name="crop_yield" msprop:FriendlyName="crop_yield" msprop:DbColumnName="crop_yield" msprop:design-time-name="b1d94bea-0b53-4e94-804e-a3544e2c39fe" type="xs:int" minOccurs="0" />
+                  <xs:element name="eggs_id" msprop:FriendlyName="eggs_id" msprop:DbColumnName="eggs_id" msprop:design-time-name="175e89fe-02c8-4541-a832-b6f3b5d1ff5d" type="xs:int" minOccurs="0" />
+                  <xs:element name="harvest_id" msprop:FriendlyName="harvest_id" msprop:DbColumnName="harvest_id" msprop:design-time-name="b93c771a-803f-4791-b3f1-3f532094af6a" type="xs:int" minOccurs="0" />
+                  <xs:element name="animal_medicine_id" msprop:FriendlyName="animal_medicine_id" msprop:DbColumnName="animal_medicine_id" msprop:design-time-name="55f79ebc-8533-468c-b82d-7de5a1ca428c" type="xs:int" minOccurs="0" />
+                  <xs:element name="poultry_medicine_id" msprop:FriendlyName="poultry_medicine_id" msprop:DbColumnName="poultry_medicine_id" msprop:design-time-name="c059278e-0793-4308-a30f-5d9e16bf0a84" type="xs:int" minOccurs="0" />
+                  <xs:element name="resource_sk" msprop:FriendlyName="resource_sk" msprop:DbColumnName="resource_sk" msprop:design-time-name="45a5ef4f-b6d3-4d58-b313-915d45827083" type="xs:int" minOccurs="0" />
+                  <xs:element name="date_sk" msprop:FriendlyName="date_sk" msprop:DbColumnName="date_sk" msprop:design-time-name="9918fe1c-145b-4dfb-a173-b76e4ba892fb" type="xs:int" minOccurs="0" />
+                  <xs:element name="assest_catalog_sk" msprop:FriendlyName="assest_catalog_sk" msprop:DbColumnName="assest_catalog_sk" msprop:design-time-name="16a4f8dd-b90b-410e-a700-4fed56d38a89" type="xs:int" minOccurs="0" />
+                  <xs:element name="crop_name" msprop:FriendlyName="crop_name" msprop:DbColumnName="crop_name" msprop:design-time-name="d2f8d607-f614-456b-b48f-22cebab090ca" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="crop_quantity_kg" msprop:FriendlyName="crop_quantity_kg" msprop:DbColumnName="crop_quantity_kg" msprop:design-time-name="4ba7c26e-ff1f-457c-863d-fb52df01aa55" type="xs:double" minOccurs="0" />
+                  <xs:element name="eggs_collected" msprop:FriendlyName="eggs_collected" msprop:DbColumnName="eggs_collected" msprop:design-time-name="41b20f36-cd9e-47db-8ba0-0426f4258c0e" type="xs:double" minOccurs="0" />
+                  <xs:element name="harvest_quantity_kg" msprop:FriendlyName="harvest_quantity_kg" msprop:DbColumnName="harvest_quantity_kg" msprop:design-time-name="ff411211-6be4-4954-909d-6192fea197c5" type="xs:double" minOccurs="0" />
+                  <xs:element name="harvest_quality_score" msprop:FriendlyName="harvest_quality_score" msprop:DbColumnName="harvest_quality_score" msprop:design-time-name="61352481-07c4-44a5-b32f-eb4b3b23fd21" type="xs:double" minOccurs="0" />
+                  <xs:element name="animal_type" msprop:FriendlyName="animal_type" msprop:DbColumnName="animal_type" msprop:design-time-name="832a5c95-10ee-44dc-9077-69d0a45a6211" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="animal_medicine_name" msprop:FriendlyName="animal_medicine_name" msprop:DbColumnName="animal_medicine_name" msprop:design-time-name="38f2719d-a946-4c51-a7f6-18f74d222bb3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="animal_dosage" msprop:FriendlyName="animal_dosage" msprop:DbColumnName="animal_dosage" msprop:design-time-name="95f399c7-f13b-4b57-a142-5ed8ecd7403a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="animal_administered" msprop:FriendlyName="animal_administered" msprop:DbColumnName="animal_administered" msprop:design-time-name="be10c8b7-252c-48f0-aa65-f018188f656e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="poultry_medicine_name" msprop:FriendlyName="poultry_medicine_name" msprop:DbColumnName="poultry_medicine_name" msprop:design-time-name="2870eb20-dffe-4fe0-bb70-356ab1675de8" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="poultry_dosage" msprop:FriendlyName="poultry_dosage" msprop:DbColumnName="poultry_dosage" msprop:design-time-name="f31abd9d-d405-41b3-9951-d2ce08d5f5e0" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="poultry_administered" msprop:FriendlyName="poultry_administered" msprop:DbColumnName="poultry_administered" msprop:design-time-name="55244e20-e965-44be-9b70-ec2c9b356a49" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Date" />
+          <xs:field xpath="date_sk" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Resource_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Resource" />
+          <xs:field xpath="resource_sk" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Assest_Catalog_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Assest_Catalog" />
+          <xs:field xpath="Assest_catalog_sk" />
+        </xs:unique>
+        <xs:unique name="dbo_Fact_Production_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_Production" />
+          <xs:field xpath="production_sk" />
+        </xs:unique>
+        <xs:keyref name="FK__Fact_Prod__date___4CA06362" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Production" />
+          <xs:field xpath="date_sk" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Prod__asses__4BAC3F29" refer="dbo_Dim_Assest_Catalog_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Production" />
+          <xs:field xpath="assest_catalog_sk" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Prod__resou__4D94879B" refer="dbo_Dim_Resource_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Production" />
+          <xs:field xpath="resource_sk" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Health_x0020_Care xmlns="" />
+  </Schema>
+</DataSourceView>

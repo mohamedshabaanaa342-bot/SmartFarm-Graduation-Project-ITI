@@ -1,0 +1,335 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="71908001-dd39-4640-926a-21b2bebf938d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Resource</ID>
+  <Name>Dim Resource</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1038" scrolltop="-3704" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6482" y="12409" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100144d6963726f736f66742053616e73205365726966" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Resource" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4366" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00000e11000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Resource" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1038</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3704</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c1119753-1f4e-4b43-9771-8664a5588dcf">
+    <DataSourceViewID>Health Care</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="93713e0a-fcae-4dac-b4b4-0ae071f625b9">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="00b6e2cf-4963-4b52-aa4a-227dee7d4b71">
+      <ID>Resource Sk</ID>
+      <Name>Resource Sk</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0ea823b3-9bc3-458b-9b6d-eaed45546e79">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="18fb2503-f2dc-4627-bb96-23225f011c4f">
+            <TableID>dbo_Dim_Resource</TableID>
+            <ColumnID>resource_sk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="01b87a39-a312-4cce-8b09-4404bb8aa887">
+          <AttributeID>Resource Id</AttributeID>
+          <Name>Resource Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="788e33fa-554e-4347-8574-6241b8e5721f">
+          <AttributeID>Resource Cattle Id</AttributeID>
+          <Name>Resource Cattle Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b112957c-fbec-4e17-830c-42d7a2a30c1b">
+          <AttributeID>Resource Poultry Id</AttributeID>
+          <Name>Resource Poultry Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c3bcff79-e906-425c-b098-b083d22e6ea7">
+          <AttributeID>Resource Crop Id</AttributeID>
+          <Name>Resource Crop Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="910b866b-d7f5-4efd-8abb-cb89f0a616f2">
+          <AttributeID>Resource Name</AttributeID>
+          <Name>Resource Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="68a6a9c3-c7b4-433b-b46f-1b1bda217707">
+          <AttributeID>Resource Type</AttributeID>
+          <Name>Resource Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ef212cd2-b8ec-4a37-a896-84c32a168466">
+          <AttributeID>Current Stock</AttributeID>
+          <Name>Current Stock</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="55ae13a7-d810-43ce-ac86-b0b0503f7f38">
+          <AttributeID>Reorder Level</AttributeID>
+          <Name>Reorder Level</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="50ba2a93-209d-4aa8-afee-e115c297ff59">
+          <AttributeID>Quantity Cattle Used</AttributeID>
+          <Name>Quantity Cattle Used</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d08ae2d2-d9ca-43cc-90c3-7b489f52168f">
+          <AttributeID>Quantity Poultry Used</AttributeID>
+          <Name>Quantity Poultry Used</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b598fe8d-7ddb-4b47-8486-89dca8355b4a">
+          <AttributeID>Quantity Crop Used</AttributeID>
+          <Name>Quantity Crop Used</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="59413b2d-ce72-4210-83bb-3cc64703857c">
+          <AttributeID>Application Crop Method</AttributeID>
+          <Name>Application Crop Method</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9132fb9c-4357-4551-bc07-b04a4bdb90c2">
+      <ID>Resource Id</ID>
+      <Name>Resource Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cd2a25b5-ee92-4ae6-a60b-559cd7a9557e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="36fe758f-5d45-48ac-9371-b686c676a7a8">
+            <TableID>dbo_Dim_Resource</TableID>
+            <ColumnID>resource_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c1154c58-45c5-40d8-81b9-e6c004ace010">
+      <ID>Resource Cattle Id</ID>
+      <Name>Resource Cattle Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fa93bac7-ad53-425b-8e55-2e65749a978e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="22111545-6329-41c6-a044-2dcb78e47400">
+            <TableID>dbo_Dim_Resource</TableID>
+            <ColumnID>resource_cattle_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="66f5ba28-612c-4297-a772-4f75c9cc165c">
+      <ID>Resource Poultry Id</ID>
+      <Name>Resource Poultry Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="85327901-d74f-448b-bf93-c2384d12b748">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d3d88caa-a064-48e6-890e-87780a361056">
+            <TableID>dbo_Dim_Resource</TableID>
+            <ColumnID>resource_poultry_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="33ad80ee-cbca-40e6-b177-4b12792178d3">
+      <ID>Resource Crop Id</ID>
+      <Name>Resource Crop Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e593f5b7-bf20-49c0-a36f-3587d6e2bec0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="66f3281c-f38c-4a4a-ad1e-ecb78a572e33">
+            <TableID>dbo_Dim_Resource</TableID>
+            <ColumnID>resource_crop_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ed6a6649-0c00-49ef-9c63-99494ba19409">
+      <ID>Resource Name</ID>
+      <Name>Resource Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3349a96a-697c-489d-bce2-61f150521178">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d42b54c-7bb7-4cd5-b7ba-55c71845bd4b">
+            <TableID>dbo_Dim_Resource</TableID>
+            <ColumnID>resource_name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a761c290-1646-4d5f-921a-53c72b12f6c2">
+      <ID>Resource Type</ID>
+      <Name>Resource Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="20401b3e-cd85-4e73-8aef-f5073327282a">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="02424c76-9125-44e0-96d2-97b6ef4b7e14">
+            <TableID>dbo_Dim_Resource</TableID>
+            <ColumnID>resource_type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3b61da2c-c46b-4bf9-b46e-5aa62b491463">
+      <ID>Current Stock</ID>
+      <Name>Current Stock</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="39241771-6dc6-4f7a-ae50-d68b5a27aab2">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="10ff0cfe-164d-44f7-99f1-bbdee7b5426a">
+            <TableID>dbo_Dim_Resource</TableID>
+            <ColumnID>current_stock</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="33e24b71-00c4-47cd-b465-6a89060fde11">
+      <ID>Reorder Level</ID>
+      <Name>Reorder Level</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9cd1182b-f42e-4629-ab5c-da137ede5b7f">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b65cb30-c2f6-4b59-ad06-7824b9b4890d">
+            <TableID>dbo_Dim_Resource</TableID>
+            <ColumnID>reorder_level</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="471ca198-40e4-481d-84ee-71efa0e60677">
+      <ID>Quantity Cattle Used</ID>
+      <Name>Quantity Cattle Used</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c3f8eac-5498-4fef-9033-7ee90dd0b168">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="beb9efa2-6ec8-4782-a45f-d92e7b28e8e7">
+            <TableID>dbo_Dim_Resource</TableID>
+            <ColumnID>quantity_cattle_used</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5a754c82-1e53-4a0e-9fa8-d3c8befe0cca">
+      <ID>Quantity Poultry Used</ID>
+      <Name>Quantity Poultry Used</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d1df416-aa6c-40b2-9864-ffa0860dce47">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f52cacc0-63dd-4741-a2b4-4d0823cf73d5">
+            <TableID>dbo_Dim_Resource</TableID>
+            <ColumnID>quantity_poultry_used</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="107af353-c226-48d9-b64f-570a65351d48">
+      <ID>Quantity Crop Used</ID>
+      <Name>Quantity Crop Used</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8375705d-57f3-45b9-8bcd-cab2c747c20c">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d269dde-950a-4b68-9418-ff539bb66ff3">
+            <TableID>dbo_Dim_Resource</TableID>
+            <ColumnID>quantity_crop_used</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e82ca706-bbfc-407a-b899-bb87779b2dff">
+      <ID>Application Crop Method</ID>
+      <Name>Application Crop Method</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4e68ed09-e43e-48ca-b434-65d7b3d5f09d">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9165935a-067c-4675-9673-c40c61fce760">
+            <TableID>dbo_Dim_Resource</TableID>
+            <ColumnID>application_crop_method</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

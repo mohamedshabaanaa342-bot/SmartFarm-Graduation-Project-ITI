@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\ITI-PowerBI\\Final Project\\SQLBI\\Action_Alert Report\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4112DBF5-BEEA-D572-F24D-32AA4D79BD34}|Action_Alert Report.rptproj|E:\\ITI-PowerBI\\Final Project\\SQLBI\\Action_Alert Report\\Alert and Risk Management.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{4112DBF5-BEEA-D572-F24D-32AA4D79BD34}|Action_Alert Report.rptproj|solutionrelative:Alert and Risk Management.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Alert and Risk Management.rdl [Design]",
+              "DocumentMoniker": "E:\\ITI-PowerBI\\Final Project\\SQLBI\\Action_Alert Report\\Alert and Risk Management.rdl",
+              "RelativeDocumentMoniker": "Alert and Risk Management.rdl",
+              "ToolTip": "E:\\ITI-PowerBI\\Final Project\\SQLBI\\Action_Alert Report\\Alert and Risk Management.rdl [Design]",
+              "RelativeToolTip": "Alert and Risk Management.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-07-04T17:06:02.364Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

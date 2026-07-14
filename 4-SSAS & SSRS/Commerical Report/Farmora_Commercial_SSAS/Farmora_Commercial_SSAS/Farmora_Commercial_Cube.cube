@@ -1,0 +1,573 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4ac43b93-40d5-420c-8fa0-9830f8dee410" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Farmora_Commercial_Cube</ID>
+  <Name>Farmora_Commercial_Cube</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12764" scrolltop="-966" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="65" x="26797" y="9970" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vw_Supplier_Resource_Dashboard" left="20" top="7487" logicalid="10" controlid="1" masterid="0" hint1="0" hint2="0" width="4593" height="4826" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f1110000da120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="pbi_vw_Supplier_Resource_Dashboard" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vw_Customer_Dashboard_Clean" left="14345" top="8026" logicalid="11" controlid="2" masterid="0" hint1="0" hint2="0" width="4318" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000de100000a30e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="pbi_vw_Customer_Dashboard_Clean" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vw_Commercial_Fact_Dashboard_CustomerClean" left="7502" top="7824" logicalid="12" controlid="3" masterid="0" hint1="0" hint2="0" width="4932" height="10958" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e000044130000ce2a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="pbi_vw_Commercial_Fact_Dashboard_CustomerClean" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vw_Resource_Dim_For_Model" left="7182" top="-684" logicalid="13" controlid="4" masterid="0" hint1="0" hint2="0" width="6384" height="6726" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f0180000461a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="pbi_vw_Resource_Dim_For_Model" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Date" left="14070" top="15581" logicalid="14" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000003090000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Date" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4313" top="7301" logicalid="15" controlid="6" masterid="0" hint1="0" hint2="0" width="3489" height="1902" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[vw_Commercial_Fact_Dashboard_CustomerClean-vw_Supplier_Resource_Dashboard]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="15" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4613" y="7700" />
+              <point x="5813" y="7700" />
+              <point x="5813" y="8903" />
+              <point x="7502" y="8903" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="12134" top="9500" logicalid="16" controlid="7" masterid="0" hint1="0" hint2="0" width="2511" height="2453" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[vw_Commercial_Fact_Dashboard_CustomerClean-vw_Customer_Dashboard_Clean]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="20" destattachpoint="31" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14345" y="9899" />
+              <point x="13145" y="9899" />
+              <point x="13145" y="11653" />
+              <point x="12434" y="11653" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8875" top="5543" logicalid="17" controlid="8" masterid="0" hint1="0" hint2="0" width="843" height="2581" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[vw_Commercial_Fact_Dashboard_CustomerClean-vw_Resource_Dim_For_Model]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9274" y="6042" />
+              <point x="9274" y="6442" />
+              <point x="9418" y="6442" />
+              <point x="9418" y="7824" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="12134" top="14881" logicalid="18" controlid="9" masterid="0" hint1="0" hint2="0" width="2736" height="1200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[vw_Commercial_Fact_Dashboard_CustomerClean-Dim_Date]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="3" sourceattachpoint="0" destattachpoint="45" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14470" y="15581" />
+              <point x="14470" y="15181" />
+              <point x="13452" y="15181" />
+              <point x="13452" y="15503" />
+              <point x="12434" y="15503" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-12764</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-966</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-684</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>65</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="d440d3c7-b565-413b-acb9-adcbc8401120">
+      <ID>Vw Customer Dashboard Clean</ID>
+      <Name>Vw Customer Dashboard Clean</Name>
+      <DimensionID>Vw Customer Dashboard Clean</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="391149a6-8b19-43c6-ae7f-fcb365fb5c0b">
+          <AttributeID>Canonical Customer Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="71a76f2b-5a59-4bdf-b401-76f34fdc29b6">
+          <AttributeID>Canonical Customer Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9d7a0e84-3e18-4ba7-9b32-c43953e16d27">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d924d45a-f38d-4b6f-b785-e7bcd4bebedb">
+          <AttributeID>Customer Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e4b04cce-728b-491b-bd0c-5f88b1f20c12">
+          <AttributeID>Email</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0a79621a-8e6d-4cb7-a204-975bd9ef3600">
+          <AttributeID>Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7a54ac01-0b0c-4716-8f26-65673729a3ed">
+          <AttributeID>Duplicate Group Count</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d06e4ef6-46a9-4398-8869-b05a95d268c3">
+          <AttributeID>Customer Record Status</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c5d6a326-aeae-464b-b52f-8150f5de3d37">
+      <ID>Vw Resource Dim For Model</ID>
+      <Name>Vw Resource Dim For Model</Name>
+      <DimensionID>Vw Resource Dim For Model</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="528d688f-5656-4e02-ba0a-ac7486227f07">
+          <AttributeID>Resource Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fa596b28-6ebb-44c1-b189-2a42582317d3">
+          <AttributeID>Resource Crop Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d7adb067-4020-44cb-98be-bfbe76aeb831">
+          <AttributeID>Resource Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cb185139-a880-4428-8a36-2c94336747b3">
+          <AttributeID>Resource Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a1d3157d-a252-4736-a297-71479867eccf">
+          <AttributeID>Resource Sector</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="451e8764-7a39-47f4-b05d-7572a319b5e6">
+          <AttributeID>Raw Reorder Level</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b6dec96-0d6b-4ea6-a98a-30e0226c7158">
+          <AttributeID>Quantity Cattle Used</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0dbf07dd-ff50-4b44-959c-61feb5799d20">
+          <AttributeID>Quantity Poultry Used</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cb8c2232-9cb7-43d7-a292-35c3e9aae736">
+          <AttributeID>Quantity Crop Used</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cbdeb2ea-c287-41fe-b0a4-eac4adf2520a">
+          <AttributeID>Raw Sector Used Quantity</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b12a4203-34cb-4e53-91f7-e32e124a874b">
+      <ID>Vw Supplier Resource Dashboard</ID>
+      <Name>Vw Supplier Resource Dashboard</Name>
+      <DimensionID>Vw Supplier Resource Dashboard</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="14a0fa32-3107-41b7-b52f-dbee8f4035d8">
+          <AttributeID>Supplier Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="373fb658-f984-48bc-bb1b-1be862e99502">
+          <AttributeID>Supplier Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9d12579c-b2ae-4b87-a748-4a64a5010afb">
+          <AttributeID>Supplier Resource Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8bb270cd-55cb-4d5f-bead-b70854349963">
+          <AttributeID>Company Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cbd13ffe-557d-43ba-91e9-91dc5a0285f4">
+          <AttributeID>Rating</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d37490a7-238c-4905-aa01-4a99de0a5268">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3a83be71-4d53-4576-953b-02bac550d8e0">
+          <AttributeID>Date Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="393f3801-b575-4146-a575-b402c1ab73e0">
+          <AttributeID>Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9ee65705-b5ea-4dbb-b81b-f9ecc1faa267">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="21a7d426-d0b6-49b1-bb52-db552675401e">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="f83f0447-a204-4f76-a85f-15eace3bac68">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="62ac851d-dc99-47e0-b835-7bd7a8a0d1ec">
+      <ID>Vw Commercial Fact Dashboard Customer Clean</ID>
+      <Name>Vw Commercial Fact Dashboard Customer Clean</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="6904ebaa-f978-4d2f-a57d-f1d98fe4ff4b">
+          <ID>Transaction Quantity</ID>
+          <Name>Transaction Quantity</Name>
+          <Source dwd:design-time-name="7bf42aa6-a582-4389-bf50-ba8674eab67b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="57acc48f-b108-488f-ae6a-c6eebd82ecd7">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>transaction_quantity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="05b8d4cd-2eb5-4db1-b29a-96b9bd81f164">
+          <ID>Transaction Unit Price</ID>
+          <Name>Transaction Unit Price</Name>
+          <Source dwd:design-time-name="0ea0e2d6-d61d-4430-b1bb-c1cc1fd17ab6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6dee0409-a720-49ba-8875-230bbfd30164">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>transaction_unit_price</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="34b30bb4-1df9-43bd-8885-e6397a9176ac">
+          <ID>Discount Pct</ID>
+          <Name>Discount Pct</Name>
+          <Source dwd:design-time-name="214a0507-07d1-47e0-b537-3f53492b3392">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4ebc5da9-7e5a-45bd-b5ae-97293ef2991c">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>discount_pct</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bee7f2c5-b4bc-4bc0-bd47-8acd77018e01">
+          <ID>Amount Before Discount</ID>
+          <Name>Amount Before Discount</Name>
+          <Source dwd:design-time-name="48c166d9-57d6-4ac3-ae17-694ce0b367e0">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="73046772-c5ab-4f29-9c63-424739f3c388">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>amount_before_discount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="aed3a051-7c0d-478a-abdf-fec6e669810a">
+          <ID>Discount Amount</ID>
+          <Name>Discount Amount</Name>
+          <Source dwd:design-time-name="04f1f9ca-ce1f-4869-b3fc-4c94e3709382">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d76143c4-a9f5-4f1a-83fb-f381d4780b67">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>discount_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5cf8c956-47ea-40eb-84e7-1b0cf0a2b119">
+          <ID>Amount After Discount</ID>
+          <Name>Amount After Discount</Name>
+          <Source dwd:design-time-name="63f1f4cf-0380-4c9d-a2c2-3b82b45f838b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="dd7b1cc7-f1f9-4a5a-a4bd-cc2e566f08d4">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>amount_after_discount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fa8d743c-9c29-4a5a-b64e-f123f87b0fcb">
+          <ID>Revenue Amount</ID>
+          <Name>Revenue Amount</Name>
+          <Source dwd:design-time-name="395e4328-6a62-4d18-acc3-73550127bf98">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9eaf9984-4c24-47b3-8677-9afaceee7553">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>revenue_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="169bfc4c-29f0-48c8-a7d9-d8c48ce0b48e">
+          <ID>Purchase Amount</ID>
+          <Name>Purchase Amount</Name>
+          <Source dwd:design-time-name="13bf1671-866d-4010-94fc-3948bda378ad">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="43d95bd0-2da3-4c61-b3f4-5348ad2a00ba">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>purchase_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0ca0b6b3-acc1-47d7-a087-5f377970d5bb">
+          <ID>Transaction Total Amount</ID>
+          <Name>Transaction Total Amount</Name>
+          <Source dwd:design-time-name="b32dfbce-5ca1-4933-af18-c72d11e08947">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1eb4cfe6-31b0-42ba-a22d-b48f9f944e0c">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>transaction_total_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1cb22756-b79d-4185-a66d-3e4701aa8e97">
+          <ID>Estimated Unit Cost</ID>
+          <Name>Estimated Unit Cost</Name>
+          <Source dwd:design-time-name="19285a63-8aaa-4432-b576-e1a99c946b28">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d1c0cf7a-bd14-4aad-92a3-9baee0c920a9">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>estimated_unit_cost</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bb412fef-3fb2-449a-a793-94c3d581c96b">
+          <ID>Estimated Total Cost</ID>
+          <Name>Estimated Total Cost</Name>
+          <Source dwd:design-time-name="1e120040-3b68-4b4e-9f6f-e13bc63b9842">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="71285f11-c8df-49bc-b96f-7165251ccd63">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>estimated_total_cost</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e0511259-db2f-45f5-bfb7-41253663786f">
+          <ID>Estimated Gross Profit</ID>
+          <Name>Estimated Gross Profit</Name>
+          <Source dwd:design-time-name="ea315062-4c8f-4eca-948e-60b3f3a09359">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f264e079-399b-405c-a514-ac66cb580bc4">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>estimated_gross_profit</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0384017e-7303-4109-a814-bed0eddcc1a3">
+          <ID>Estimated Gross Margin Pct</ID>
+          <Name>Estimated Gross Margin Pct</Name>
+          <Source dwd:design-time-name="bd14d33c-e80a-4b16-ba82-ec6174bec65a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0f41b52a-34e0-475b-88d9-fcc992d6f1b7">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>estimated_gross_margin_pct</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="433f3eb4-825c-45b0-ae32-015378bfee01">
+          <ID>Net Cash Flow Amount</ID>
+          <Name>Net Cash Flow Amount</Name>
+          <Source dwd:design-time-name="7c2b101c-4f60-41c1-9fd0-abfcf77f7ee6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bf2fa4c0-affe-4ded-a0b7-09473bf9a01c">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+              <ColumnID>net_cash_flow_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7b16ed1f-a74d-4578-90d9-af4c6ed8925d">
+          <ID>Vw Commercial Fact Dashboard Customer Clean Count</ID>
+          <Name>Vw Commercial Fact Dashboard Customer Clean Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="787b661c-abff-419d-95b5-920df79056a0">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="53bdcc4a-c917-4887-bcce-2896213c4094">
+              <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cda078d8-855f-42d0-89fd-46b30466ac7c">
+          <CubeDimensionID>Vw Customer Dashboard Clean</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="40759b00-3336-4548-9743-0c2d2adc2255">
+              <AttributeID>Canonical Customer Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4b5e1961-a5f0-4c99-9e3d-b0d5888171ce">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9f342c31-074f-4e00-a895-58eafde03520">
+                    <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+                    <ColumnID>canonical_customer_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="878ba444-41da-45a9-a443-b1b1945db5b1">
+          <CubeDimensionID>Vw Resource Dim For Model</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9123ed78-1279-45c6-a9aa-5fa6e4dbaacd">
+              <AttributeID>Resource Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="92032e1f-62c3-45ab-8a84-f6f4c7f81c19">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="957dfcb3-ee32-4adb-a54d-1fb69773f579">
+                    <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+                    <ColumnID>resource_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="809bac18-0847-497f-ab53-27d809ed2d02">
+          <CubeDimensionID>Vw Supplier Resource Dashboard</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="66b31fac-e399-4953-bc8e-0f226b2a4315">
+              <AttributeID>Supplier Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c0cefa6d-c6f8-46ce-8e58-0cb8f9ca43ad">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="08d4335f-b2f8-4b8d-9f8f-a8cc806f3512">
+                    <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+                    <ColumnID>supplier_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1f4e6571-814a-4a3a-8867-c65d00ae0d41">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ef48b5a7-cf74-4b8d-9de2-0acb798f14af">
+              <AttributeID>Date Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c956c025-b028-4bf5-9849-84773a8a4424">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3c2146fc-0c6f-44a3-bc39-bdac91d6698f">
+                    <TableID>pbi_vw_Commercial_Fact_Dashboard_CustomerClean</TableID>
+                    <ColumnID>Date_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="49ae00e8-66f5-4d16-aff4-03295bb34091">
+    <DataSourceViewID>Farmora_Commercial_DSV</DataSourceViewID>
+  </Source>
+</Cube>

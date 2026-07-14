@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\power BI\\Graduation\\Farmora_Commercial_SSRS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47056AD9-DDBB-0F3D-0B76-B7E2FBE90162}|Farmora_Commercial_SSRS\\Farmora_Commercial_SSRS.rptproj|D:\\power BI\\Graduation\\Farmora_Commercial_SSRS\\Farmora_Commercial_SSRS\\Commercial_Overview.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{47056AD9-DDBB-0F3D-0B76-B7E2FBE90162}|Farmora_Commercial_SSRS\\Farmora_Commercial_SSRS.rptproj|solutionrelative:Farmora_Commercial_SSRS\\Commercial_Overview.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 248,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Commercial_Overview.rdl [Design]",
+              "DocumentMoniker": "D:\\power BI\\Graduation\\Farmora_Commercial_SSRS\\Farmora_Commercial_SSRS\\Commercial_Overview.rdl",
+              "RelativeDocumentMoniker": "Farmora_Commercial_SSRS\\Commercial_Overview.rdl",
+              "ToolTip": "D:\\power BI\\Graduation\\Farmora_Commercial_SSRS\\Farmora_Commercial_SSRS\\Commercial_Overview.rdl [Design]",
+              "RelativeToolTip": "Farmora_Commercial_SSRS\\Commercial_Overview.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-07-11T00:05:18.557Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 12,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
