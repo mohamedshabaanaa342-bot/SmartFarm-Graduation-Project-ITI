@@ -142,12 +142,4 @@ July 2026 — ITI Graduation Project
 
 ---
 
-## 📸 Project Screenshots
 
-Screenshots for each stage (ERD, DWH Schema, SSIS Packages, SSAS Cubes, Power BI, Tableau, AI Agent, Power App) can be added to an `assets/` or `screenshots/` folder, sourced from the original presentation `Farmora_BI_Project_Presentation.pptx`.
-
----
-
-## 📄 License
-
-Educational Project — ITI ICC Track.
