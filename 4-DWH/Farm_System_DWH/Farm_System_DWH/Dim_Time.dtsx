@@ -1,0 +1,84 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/21/2026 10:12:57 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-463JUUP"
+  DTS:CreatorName="DESKTOP-463JUUP\TheGenius"
+  DTS:DTSID="{AAB5A956-1C1A-4BE6-A996-A68146E5C261}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1016.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Dim_Time"
+  DTS:PackageType="5"
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{BF268235-D203-4ED0-A5A1-F60EEDA6E8EB}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\MSSQLSERVER1.Farm_System]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6EB0BD33-9D08-432A-91B1-C7F217457FCC}"
+      DTS:ObjectName="localhost\MSSQLSERVER1.Farm_System">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost\MSSQLSERVER1;Initial Catalog=Farm_System;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Dim_Time-{6EB0BD33-9D08-432A-91B1-C7F217457FCC}localhost\MSSQLSERVER1.Farm_System;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\MSSQLSERVER1.Farm_System_DWH]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4A7D52DA-F420-4F5B-8182-1EDCD004832E}"
+      DTS:ObjectName="localhost\MSSQLSERVER1.Farm_System_DWH">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost\MSSQLSERVER1;Initial Catalog=Farm_System_DWH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Dim_Time-{4A7D52DA-F420-4F5B-8182-1EDCD004832E}localhost\MSSQLSERVER1.Farm_System_DWH;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\FillDimTime"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{d854e29d-5090-4659-bb0e-cdef0d8b58b7}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FillDimTime"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4A7D52DA-F420-4F5B-8182-1EDCD004832E}"
+          SQLTask:SqlStatementSource="&#xA;-- 2. تفعيل خاصية إدخال قيم يدوية في عمود الـ Identity&#xA;SET IDENTITY_INSERT [dbo].[Dim_Time] ON;&#xA;&#xA;-- 3. توليد الـ 86,400 ثانية دفعة واحدة في جزء من الثانية&#xA;WITH Digits AS (&#xA;    SELECT TOP 10 row_number() OVER (ORDER BY (SELECT NULL)) - 1 AS d &#xA;    FROM master.dbo.spt_values&#xA;),&#xA;Numbers AS (&#xA;    SELECT (d1.d + d2.d * 10 + d3.d * 100 + d4.d * 1000 + d5.d * 10000) AS n&#xA;    FROM Digits d1 &#xA;    CROSS JOIN Digits d2 &#xA;    CROSS JOIN Digits d3 &#xA;    CROSS JOIN Digits d4 &#xA;    CROSS JOIN Digits d5&#xA;    WHERE (d1.d + d2.d * 10 + d3.d * 100 + d4.d * 1000 + d5.d * 10000) &lt; 86400&#xA;),&#xA;TimeGeneration AS (&#xA;    SELECT &#xA;        n / 3600 AS [h],&#xA;        (n % 3600) / 60 AS [m],&#xA;        n % 60 AS [s]&#xA;    FROM Numbers&#xA;)&#xA;INSERT INTO [dbo].[Dim_Time] ([time_sk], [hour], [minte], [second])&#xA;SELECT &#xA;    -- تركيب الـ SK الرقمي الموزون&#xA;    CAST(&#xA;        RIGHT('0' + CAST([h] AS VARCHAR(2)), 2) + &#xA;        RIGHT('0' + CAST([m] AS VARCHAR(2)), 2) + &#xA;        RIGHT('0' + CAST([s] AS VARCHAR(2)), 2) &#xA;    AS INT) AS [time_sk],&#xA;    [h] AS [hour],&#xA;    [m] AS [minte], -- الاسم الملتزم به في مخططك&#xA;    [s] AS [second]&#xA;FROM TimeGeneration&#xA;ORDER BY [h], [m], [s];&#xA;&#xA;-- 4. إعادة إغلاق الخاصية لحماية الجدول بعد اكتمال الإدخال&#xA;SET IDENTITY_INSERT [dbo].[Dim_Time] OFF;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="141.333333333334,42.6666666666667"
+          Id="Package\FillDimTime"
+          TopLeft="158.749992903322,49.3999976444245" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

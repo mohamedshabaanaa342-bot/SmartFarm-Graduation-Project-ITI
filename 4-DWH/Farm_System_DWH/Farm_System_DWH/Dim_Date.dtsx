@@ -1,0 +1,72 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/20/2026 9:00:44 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-463JUUP"
+  DTS:CreatorName="DESKTOP-463JUUP\TheGenius"
+  DTS:DTSID="{D6694610-3174-4C8E-8370-28072358BBA8}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1016.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Dim_Date"
+  DTS:PackageType="5"
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{FFFE22B5-4267-40DB-A476-A9F4A40C4251}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\MSSQLSERVER1.Farm_System_DWH]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{DD53FB33-843C-4015-A5C7-2F49C5B08D4A}"
+      DTS:ObjectName="localhost\MSSQLSERVER1.Farm_System_DWH">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost\MSSQLSERVER1;Initial Catalog=Farm_System_DWH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Dim_Date-{DD53FB33-843C-4015-A5C7-2F49C5B08D4A}localhost\MSSQLSERVER1.Farm_System_DWH;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Fill Dim Date"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{B72231AF-D52B-44DE-923A-792DCBC70F20}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Fill Dim Date"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DD53FB33-843C-4015-A5C7-2F49C5B08D4A}"
+          SQLTask:SqlStatementSource="&#xA;&#xA;-- 2. تحديد الفترة الزمنية (من سنة 2020 إلى 2030)&#xA;DECLARE @StartDate DATE = '2020-01-01'&#xA;DECLARE @EndDate DATE = '2030-12-31'&#xA;&#xA;WHILE @StartDate &lt;= @EndDate&#xA;BEGIN&#xA;    INSERT INTO [dbo].[Dim_Date] (&#xA;        [date_sk], &#xA;        [Day], &#xA;        [mounth], -- تم الالتزام بالاسم المكتوب في المخطط الخاص بك&#xA;        [year]&#xA;    )&#xA;    VALUES (&#xA;        -- تركيب التاريخ بالكامل بصيغة YYYYMMDD مدمجة رقمياً (مثال: 20260626)&#xA;        CAST(FORMAT(@StartDate, 'yyyyMMdd') AS INT), &#xA;        DAY(@StartDate),&#xA;        MONTH(@StartDate), &#xA;        YEAR(@StartDate)&#xA;    )&#xA;    &#xA;    -- الانتقال لليوم التالي&#xA;    SET @StartDate = DATEADD(day, 1, @StartDate)&#xA;END" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="140,42.6666666666667"
+          Id="Package\Fill Dim Date"
+          TopLeft="131.249994132668,36.3999982643128" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
